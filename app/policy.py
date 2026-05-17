@@ -33,6 +33,17 @@ OFF_TOPIC_PATTERNS = [
     r"\bhow\s+to\s+write\b",
 ]
 
+LEGAL_PATTERNS = [
+    r"\blegal\b",
+    r"\blawsuit\b",
+    r"\bemployment\s+laws?\b",
+    r"\bemployment\s*law\b",
+    r"\blabor\s*law\b",
+    r"\bcompliance\b",
+    r"\bdiscrimination\b",
+    r"\badverse\s+impact\b",
+]
+
 ASSESSMENT_SCOPE_TERMS = [
     "assessment", "assessments", "test", "tests", "shl", "screening",
     "aptitude", "cognitive", "personality", "reasoning", "skills",
@@ -102,6 +113,14 @@ def _sanitize_query_part(text: str) -> str:
     return re.sub(r"\s+", " ", text).strip()
 
 
+def _is_refinement_override(text: str) -> bool:
+    text_lower = text.lower()
+    return any(
+        marker in text_lower
+        for marker in ["specifically", "instead", "make it", "change to", "switch to", "only", "actually"]
+    )
+
+
 def _extract_comparison_names(text: str) -> tuple[str | None, str | None]:
     """Try to extract two assessment names from a comparison query."""
     # "difference between X and Y"
@@ -114,6 +133,9 @@ def _extract_comparison_names(text: str) -> tuple[str | None, str | None]:
         return m.group(1).strip(), m.group(2).strip()
     # "compare X and Y"
     m = re.search(r"compar\w+\s+(.+?)\s+(?:and|to|with)\s+(.+?)(?:\s*[?.]|\s*$)", text, re.IGNORECASE)
+    if m:
+        return m.group(1).strip(), m.group(2).strip()
+    m = re.search(r"better\s*:\s*(.+?)\s+or\s+(.+?)(?:\s*[?.]|\s*$)", text, re.IGNORECASE)
     if m:
         return m.group(1).strip(), m.group(2).strip()
     return None, None
@@ -139,9 +161,20 @@ def _is_shl_assessment_query(text: str) -> bool:
         "reasoning", "simulation", "shl", "hire", "hiring", "recruit",
         "candidate", "employee", "role", "position", "job", "screen",
         "selection", "verify", "check", "profile", "behav",
+        "programming", "coding", "technical", "java", "python", "sql",
+        "excel", "accounting", "sales", "customer service", "manager",
+        "developer", "engineer", "remote",
     ]
     text_lower = text.lower()
     return any(kw in text_lower for kw in shl_keywords)
+
+
+def _conversation_has_assessment_context(messages: list[dict]) -> bool:
+    """Detect whether earlier user turns established assessment intent."""
+    for msg in messages[:-1]:
+        if msg.get("role") == "user" and _is_shl_assessment_query(msg.get("content", "")):
+            return True
+    return False
 
 
 def _extract_constraints(messages: list[dict]) -> dict:
@@ -260,6 +293,13 @@ def build_response(messages: list[dict], cat: Catalog | None = None) -> ChatResp
             end_of_conversation=False,
         )
 
+    if _matches_any(latest, LEGAL_PATTERNS):
+        return ChatResponse(
+            reply="I can only help with SHL assessment selection. I can't provide legal or compliance advice about hiring or assessment use.",
+            recommendations=[],
+            end_of_conversation=False,
+        )
+
     # Check for off-topic/general-advice queries before broad assessment routing.
     if _matches_any(latest, OFF_TOPIC_PATTERNS) and not _has_assessment_scope(latest):
         return ChatResponse(
@@ -276,7 +316,11 @@ def build_response(messages: list[dict], cat: Catalog | None = None) -> ChatResp
             end_of_conversation=False,
         )
 
-    if not _is_shl_assessment_query(latest) and not _matches_any(latest, COMPARISON_PATTERNS):
+    if (
+        not _is_shl_assessment_query(latest)
+        and not _matches_any(latest, COMPARISON_PATTERNS)
+        and not _conversation_has_assessment_context(messages)
+    ):
         return ChatResponse(
             reply="I can only help with SHL assessment recommendations. Please ask about assessments for specific roles, skills, or test types.",
             recommendations=[],
@@ -316,7 +360,13 @@ def build_response(messages: list[dict], cat: Catalog | None = None) -> ChatResp
 
     # Extract constraints from full conversation
     constraints = _extract_constraints(messages)
+    latest_query = _sanitize_query_part(latest)
     combined_query = " ".join(constraints["query_parts"])
+    if len(user_messages) > 1 and latest_query and _is_refinement_override(latest):
+        combined_query = latest_query
+    elif len(user_messages) > 1 and latest_query:
+        # Weight the latest user turn more heavily so stateless refinements can change direction.
+        combined_query = " ".join([combined_query, latest_query, latest_query]).strip()
 
     # If we have some context but it's still very broad, ask one clarifying question
     if (not constraints["test_types"] and not constraints["job_levels"]

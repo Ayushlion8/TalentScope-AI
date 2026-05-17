@@ -31,6 +31,14 @@ def test_chat_empty_messages_rejected(client: TestClient):
     assert resp.status_code == 422
 
 
+def test_chat_rejects_extra_request_fields(client: TestClient):
+    resp = client.post("/chat", json={
+        "messages": [{"role": "user", "content": "I need a programming test"}],
+        "state": {"conversation_id": "not-allowed"},
+    })
+    assert resp.status_code == 422
+
+
 def test_chat_recommendation_schema(client: TestClient, sample_catalog: Catalog):
     resp = build_response(
         [{"role": "user", "content": "I need a C programming test"}],
@@ -113,6 +121,19 @@ def test_refinement_updates_recommendations(sample_catalog: Catalog):
         assert any("SQL" in r.name for r in resp2.recommendations)
 
 
+def test_refinement_override_prior_context(sample_catalog: Catalog):
+    resp = build_response(
+        [
+            {"role": "user", "content": "I need an assessment for a developer"},
+            {"role": "assistant", "content": "Some reply"},
+            {"role": "user", "content": "make it SQL and remote only"},
+        ],
+        cat=sample_catalog,
+    )
+    assert len(resp.recommendations) >= 1
+    assert "SQL" in resp.recommendations[0].name
+
+
 # --- Comparison -> grounded answer, no hallucinated facts ---
 
 
@@ -155,6 +176,24 @@ def test_off_topic_legal_question(sample_catalog: Catalog):
     )
     assert resp.recommendations == []
     assert any(kw in resp.reply.lower() for kw in ["only", "shl", "assessment", "can't", "cannot", "legal"])
+
+
+def test_legal_question_refused_even_when_mentions_shl(sample_catalog: Catalog):
+    resp = build_response(
+        [{"role": "user", "content": "Are SHL assessments legal in California?"}],
+        cat=sample_catalog,
+    )
+    assert resp.recommendations == []
+    assert "legal" in resp.reply.lower()
+
+
+def test_unrelated_question_refused(sample_catalog: Catalog):
+    resp = build_response(
+        [{"role": "user", "content": "Tell me a joke"}],
+        cat=sample_catalog,
+    )
+    assert resp.recommendations == []
+    assert "shl assessment" in resp.reply.lower() or "assessments" in resp.reply.lower()
 
 
 # --- Prompt injection -> refusal ---

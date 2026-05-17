@@ -5,6 +5,7 @@ import json
 import logging
 import re
 from pathlib import Path
+from collections import Counter
 from difflib import SequenceMatcher
 
 from app.config import CATALOG_PATH
@@ -83,6 +84,7 @@ STOPWORDS = {
     "a", "an", "and", "are", "as", "at", "be", "for", "from", "i", "in",
     "is", "it", "me", "my", "need", "of", "on", "or", "please", "role",
     "some", "the", "to", "with", "want", "we", "you",
+    "make", "only",
 }
 
 
@@ -92,6 +94,14 @@ def _tokens(text: str) -> set[str]:
         for token in re.split(r"[^a-z0-9+#.]+", text.lower())
         if len(token) >= 2 and token not in STOPWORDS
     }
+
+
+def _token_counts(text: str) -> Counter[str]:
+    return Counter(
+        token
+        for token in re.split(r"[^a-z0-9+#.]+", text.lower())
+        if len(token) >= 2 and token not in STOPWORDS
+    )
 
 
 def _similarity(a: str, b: str) -> float:
@@ -260,20 +270,21 @@ class Catalog:
                     score += 50
 
                 # Word-level matching (each query word found in name), weighted
-                q_words = _tokens(q)
+                q_token_counts = _token_counts(q)
+                q_words = set(q_token_counts)
                 name_words = set(re.split(r"[\s()\-_,.]+", name))
                 overlap = q_words & name_words
                 if overlap:
                     for w in overlap:
-                        score += 15 + 100 * q_word_weights.get(w, 1.0)
+                        score += (15 + 100 * q_word_weights.get(w, 1.0)) * min(q_token_counts[w], 3)
 
                 # Substring matching: each query word as substring in name
                 for qw in q_words:
                     w = q_word_weights.get(qw, 1.0)
                     if len(qw) >= 3 and qw in name:
-                        score += 12 + 80 * w
+                        score += (12 + 80 * w) * min(q_token_counts[qw], 3)
                     elif len(qw) >= 3 and qw in name.replace("(", " ").replace(")", " "):
-                        score += 12 + 80 * w
+                        score += (12 + 80 * w) * min(q_token_counts[qw], 3)
 
                 # Bonus for matching ALL query words in the full searchable text
                 all_found = all(qw in stext for qw in q_words if len(qw) >= 2)
