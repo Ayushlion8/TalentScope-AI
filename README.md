@@ -71,7 +71,7 @@ Current suite covers health, strict schema behavior, clarification, recommendati
 
 ## Catalog
 
-The catalog lives in `data/catalog.json` and is loaded at startup on first use. The scraper in `scripts/scrape_catalog.py` targets SHL product catalog pages with `type=1`, which corresponds to Individual Test Solutions.
+The catalog lives in `data/catalog.json` and is loaded at startup on first use. The scraper in `scripts/scrape_catalog.py` targets SHL product catalog pages with `type=1`, which corresponds to Individual Test Solutions. Product URLs are preserved from the scraped catalog hrefs and must start with `https://www.shl.com/products/product-catalog/view/`.
 
 To refresh the catalog:
 

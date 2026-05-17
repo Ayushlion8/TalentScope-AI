@@ -14,6 +14,7 @@ logger = logging.getLogger(__name__)
 
 DATA_DIR = Path(__file__).resolve().parent.parent / "data"
 CATALOG_FILE = CATALOG_PATH
+CATALOG_URL_PREFIX = "https://www.shl.com/products/product-catalog/view/"
 
 TEST_TYPE_MAP = {
     "A": "Ability & Aptitude",
@@ -54,7 +55,7 @@ TYPE_KEYWORDS: dict[str, list[str]] = {
         "java", "python", "c++", "c#", ".net", "sql", "sap", "microsoft",
         "excel", "word", "accounting", "finance", "sales", "marketing",
         "typing", "data entry", "call center", "customer service",
-        "agile", "scrum", "project management", "it", "web", "design",
+        "agile", "scrum", "project management", "information technology", "web", "design",
         "linux", "network", "security", "cloud", "devops", "testing",
         "automation", "digital", "analytics", "communication",
     ],
@@ -164,7 +165,7 @@ class Catalog:
 
         name = str(raw.get("name", "")).strip()
         url = str(raw.get("url", "")).strip()
-        if not name or not url.startswith("https://www.shl.com/"):
+        if not name or not url.startswith(CATALOG_URL_PREFIX):
             logger.warning("Skipping invalid catalog row with name=%r url=%r", name, url)
             return None
 
@@ -177,8 +178,8 @@ class Catalog:
 
         return {
             "name": name,
-            "slug": str(raw.get("slug", "")).strip(),
             "url": url,
+            "source_href": str(raw.get("source_href", "")).strip(),
             "remote_testing": bool(raw.get("remote_testing", False)),
             "adaptive_irt": bool(raw.get("adaptive_irt", False)),
             "test_type_keys": test_type_keys,
@@ -218,13 +219,6 @@ class Catalog:
                 best_score = score
                 best_item = item
         return best_item
-
-    def get_by_slug(self, slug: str) -> dict | None:
-        self.ensure_loaded()
-        for item in self.items:
-            if item.get("slug", "").lower() == slug.lower():
-                return item
-        return None
 
     def search(
         self,
@@ -357,7 +351,7 @@ class Catalog:
                 if overlap:
                     score += len(overlap) * 20
                 elif requested:
-                    score -= 10
+                    score -= 80
 
             # Remote testing preference
             if remote_testing is not None:
@@ -385,6 +379,33 @@ class Catalog:
 
         # Sort by score descending, then by name for determinism
         scored.sort(key=lambda x: (-x[0], x[1]["name"]))
+
+        if test_types:
+            requested = set()
+            for tt in test_types:
+                tt_upper = tt.upper()
+                if tt_upper in TEST_TYPE_MAP:
+                    requested.add(tt_upper)
+                else:
+                    for k, v in TEST_TYPE_MAP.items():
+                        if v.lower() == tt.lower() or tt.lower() in v.lower():
+                            requested.add(k)
+            if requested:
+                type_matched = [
+                    (score, item)
+                    for score, item in scored
+                    if set(item.get("test_type_keys", [])) & requested
+                ]
+                if len(type_matched) >= max_results:
+                    scored = type_matched
+                elif type_matched:
+                    type_matched_ids = {id(item) for _, item in type_matched}
+                    scored = type_matched + [
+                        (score, item)
+                        for score, item in scored
+                        if id(item) not in type_matched_ids
+                    ]
+
         return [item for _, item in scored[:max_results]]
 
     def compare(self, name_a: str, name_b: str) -> tuple[dict | None, dict | None]:

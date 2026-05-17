@@ -22,11 +22,11 @@ Short refinement turns are supported by reading the full history. Explicit marke
 
 ## Retrieval
 
-The catalog loader validates rows and keeps only usable SHL URLs. Each catalog item is normalized to:
+The scraper preserves the exact catalog link href for each product and never reconstructs URLs from names. The catalog loader validates rows and keeps only usable SHL catalog URLs. Each catalog item is normalized to:
 
 - name
-- slug
 - url
+- source_href
 - remote_testing
 - adaptive_irt
 - test_type_keys

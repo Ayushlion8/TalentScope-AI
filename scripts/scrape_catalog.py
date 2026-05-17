@@ -16,9 +16,9 @@ logger = logging.getLogger(__name__)
 
 BASE = "https://www.shl.com"
 LIST_URL = BASE + "/products/product-catalog/"
-DETAIL_PREFIX = "/solutions/products/product-catalog/view/"
 DATA_DIR = Path(__file__).resolve().parent.parent / "data"
 OUT_FILE = DATA_DIR / "catalog.json"
+CATALOG_URL_PREFIX = BASE + "/products/product-catalog/view/"
 
 TEST_TYPE_MAP = {
     "A": "Ability & Aptitude",
@@ -56,9 +56,11 @@ def parse_list_row(tr) -> dict | None:
     if not link:
         return None
     name = link.get_text(strip=True)
-    href = link.get("href", "")
-    slug = href.strip("/").split("/")[-1] if href else ""
-    url = urljoin(BASE + "/", href.lstrip("/"))
+    source_href = link.get("href", "").strip()
+    url = urljoin(BASE + "/", source_href)
+    if not url.startswith(CATALOG_URL_PREFIX):
+        logger.warning("Skipping row with non-catalog URL for %s: %s", name, url)
+        return None
 
     # Remote testing
     remote_td = tr.select("td.custom__table-heading__general")[0] if len(tr.select("td.custom__table-heading__general")) >= 1 else None
@@ -81,8 +83,8 @@ def parse_list_row(tr) -> dict | None:
 
     return {
         "name": name,
-        "slug": slug,
         "url": url,
+        "source_href": source_href,
         "remote_testing": remote_testing,
         "adaptive_irt": adaptive_irt,
         "test_type_keys": test_types,
@@ -194,18 +196,19 @@ def scrape_all_list_pages(client: httpx.Client) -> list[dict]:
     return items
 
 
-def scrape_detail_pages(client: httpx.Client, items: list[dict]) -> list[dict]:
+def scrape_detail_pages(client: httpx.Client, items: list[dict], validate_urls: bool = False) -> list[dict]:
     """Scrape detail pages for each item to enrich with descriptions etc."""
     total = len(items)
     for i, item in enumerate(items):
-        slug = item.get("slug", "")
-        if not slug:
-            logger.warning("No slug for item: %s", item["name"])
+        detail_url = item.get("url", "")
+        if not detail_url.startswith(CATALOG_URL_PREFIX):
+            logger.warning("Skipping invalid detail URL for %s: %s", item["name"], detail_url)
             continue
-        detail_url = f"{BASE}/solutions/products/product-catalog/view/{slug}/"
         logger.info("Scraping detail %d/%d: %s", i + 1, total, item["name"])
         try:
             html = fetch_page(client, detail_url)
+            if validate_urls and "Page not found" in html:
+                raise RuntimeError(f"SHL returned a page-not-found body for {detail_url}")
             parse_detail_page(html, item)
         except Exception as e:
             logger.error("Failed to scrape detail for %s: %s", item["name"], e)
@@ -227,6 +230,7 @@ def main():
     # If --listing-only flag, just scrape listing pages
     listing_only = "--listing-only" in sys.argv
     skip_details = "--skip-details" in sys.argv
+    validate_urls = "--validate-urls" in sys.argv
 
     with httpx.Client() as client:
         logger.info("=== Scraping listing pages ===")
@@ -235,7 +239,7 @@ def main():
 
         if not listing_only and not skip_details:
             logger.info("=== Scraping detail pages ===")
-            items = scrape_detail_pages(client, items)
+            items = scrape_detail_pages(client, items, validate_urls=validate_urls)
         else:
             logger.info("Skipping detail pages (--listing-only or --skip-details flag)")
 

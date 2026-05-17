@@ -14,8 +14,8 @@ from app.main import app
 SAMPLE_CATALOG = [
     {
         "name": "C Programming (New)",
-        "slug": "c-programming-new",
-        "url": "https://www.shl.com/solutions/products/product-catalog/view/c-programming-new/",
+        "source_href": "/products/product-catalog/view/c-programming-new/",
+        "url": "https://www.shl.com/products/product-catalog/view/c-programming-new/",
         "remote_testing": True,
         "adaptive_irt": True,
         "test_type_keys": ["K"],
@@ -28,8 +28,8 @@ SAMPLE_CATALOG = [
     },
     {
         "name": "Numerical Reasoning",
-        "slug": "numerical-reasoning",
-        "url": "https://www.shl.com/solutions/products/product-catalog/view/numerical-reasoning/",
+        "source_href": "/products/product-catalog/view/numerical-reasoning/",
+        "url": "https://www.shl.com/products/product-catalog/view/numerical-reasoning/",
         "remote_testing": True,
         "adaptive_irt": True,
         "test_type_keys": ["A"],
@@ -42,8 +42,8 @@ SAMPLE_CATALOG = [
     },
     {
         "name": "OPQ Personality",
-        "slug": "opq-personality",
-        "url": "https://www.shl.com/solutions/products/product-catalog/view/opq-personality/",
+        "source_href": "/products/product-catalog/view/opq-personality/",
+        "url": "https://www.shl.com/products/product-catalog/view/opq-personality/",
         "remote_testing": True,
         "adaptive_irt": False,
         "test_type_keys": ["P"],
@@ -56,8 +56,8 @@ SAMPLE_CATALOG = [
     },
     {
         "name": "Managerial Potential Assessment",
-        "slug": "managerial-potential",
-        "url": "https://www.shl.com/solutions/products/product-catalog/view/managerial-potential/",
+        "source_href": "/products/product-catalog/view/managerial-potential/",
+        "url": "https://www.shl.com/products/product-catalog/view/managerial-potential/",
         "remote_testing": True,
         "adaptive_irt": False,
         "test_type_keys": ["A", "P"],
@@ -70,8 +70,8 @@ SAMPLE_CATALOG = [
     },
     {
         "name": "SQL Server (New)",
-        "slug": "sql-server-new",
-        "url": "https://www.shl.com/solutions/products/product-catalog/view/sql-server-new/",
+        "source_href": "/products/product-catalog/view/sql-server-new/",
+        "url": "https://www.shl.com/products/product-catalog/view/sql-server-new/",
         "remote_testing": True,
         "adaptive_irt": True,
         "test_type_keys": ["K"],
@@ -84,8 +84,8 @@ SAMPLE_CATALOG = [
     },
     {
         "name": "Situational Judgement Test",
-        "slug": "situational-judgement",
-        "url": "https://www.shl.com/solutions/products/product-catalog/view/situational-judgement/",
+        "source_href": "/products/product-catalog/view/situational-judgement/",
+        "url": "https://www.shl.com/products/product-catalog/view/situational-judgement/",
         "remote_testing": True,
         "adaptive_irt": False,
         "test_type_keys": ["B"],

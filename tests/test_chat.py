@@ -4,7 +4,7 @@ from __future__ import annotations
 import pytest
 from fastapi.testclient import TestClient
 
-from app.catalog import Catalog
+from app.catalog import CATALOG_URL_PREFIX, Catalog
 from app.models import ChatResponse
 from app.policy import build_response
 
@@ -49,7 +49,7 @@ def test_chat_recommendation_schema(client: TestClient, sample_catalog: Catalog)
         rec = resp.recommendations[0]
         assert isinstance(rec.name, str)
         assert isinstance(rec.url, str)
-        assert rec.url.startswith("https://www.shl.com")
+        assert rec.url.startswith(CATALOG_URL_PREFIX)
         assert isinstance(rec.test_type, list)
         assert isinstance(rec.remote_testing, bool)
         assert isinstance(rec.adaptive_irt, bool)
@@ -225,10 +225,51 @@ def test_recommendations_use_catalog_urls(sample_catalog: Catalog):
         cat=sample_catalog,
     )
     for rec in resp.recommendations:
-        assert rec.url.startswith("https://www.shl.com")
+        assert rec.url.startswith(CATALOG_URL_PREFIX)
         # Verify URL exists in catalog
         found = any(item["url"] == rec.url for item in sample_catalog.items)
         assert found, f"URL {rec.url} not in catalog"
+
+
+def test_recommendation_urls_exactly_match_catalog_entries(sample_catalog: Catalog):
+    resp = build_response(
+        [{"role": "user", "content": "I need a SQL skills test"}],
+        cat=sample_catalog,
+    )
+    catalog_by_name = {item["name"]: item["url"] for item in sample_catalog.items}
+    for rec in resp.recommendations:
+        assert rec.url == catalog_by_name[rec.name]
+
+
+def test_catalog_filters_non_catalog_url_rows(tmp_path):
+    import json as _json
+    from app.catalog import Catalog
+
+    catalog_file = tmp_path / "catalog.json"
+    rows = [
+        {
+            "name": "Valid SQL",
+            "url": "https://www.shl.com/products/product-catalog/view/valid-sql/",
+            "test_type_keys": ["K"],
+            "test_types": ["Knowledge & Skills"],
+        },
+        {
+            "name": "Invalid Solutions URL",
+            "url": "https://www.shl.com/solutions/products/product-catalog/view/invalid/",
+            "test_type_keys": ["K"],
+            "test_types": ["Knowledge & Skills"],
+        },
+        {
+            "name": "Truncated Host",
+            "url": "https://www.shl.com/products/product-catalog/valid-sql/",
+            "test_type_keys": ["K"],
+            "test_types": ["Knowledge & Skills"],
+        },
+    ]
+    catalog_file.write_text(_json.dumps(rows), encoding="utf-8")
+    cat = Catalog(path=catalog_file)
+    cat.load()
+    assert [item["name"] for item in cat.items] == ["Valid SQL"]
 
 
 # --- Response never exceeds 10 recommendations ---
