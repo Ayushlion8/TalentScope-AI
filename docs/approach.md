@@ -22,7 +22,7 @@ Short refinement turns are supported by reading the full history. Explicit marke
 
 ## Retrieval
 
-The scraper preserves the exact catalog link href for each product and never reconstructs URLs from names. The catalog loader validates rows and keeps only usable SHL catalog URLs. Each catalog item is normalized to:
+The scraper preserves the exact catalog link href for each product and never reconstructs URLs from names. It also enriches detail metadata from each catalog page for descriptions, job levels, languages, and duration. The catalog loader validates rows and keeps only usable SHL catalog URLs. Each catalog item is normalized to:
 
 - name
 - url
@@ -49,7 +49,7 @@ Search is deterministic. It scores:
 - remote testing, language, and job level filters
 - generic assessment/report names as a penalty when a more specific skill match exists
 
-Results are sorted by score descending and then name ascending for stable output. The service returns at most 10 recommendations.
+Results are sorted by score descending and then name ascending for stable output. The service returns at most 10 recommendations. Recommendation `test_type` values use SHL short codes such as `K`, `P`, and `A`, matching the assignment schema example.
 
 ## Comparison
 
@@ -71,4 +71,4 @@ Refusals never include recommendations.
 
 ## Tradeoffs
 
-Embeddings were not used because the assignment rewards grounded, reproducible behavior. The deterministic scorer is easier to test, explain, and debug. The current checked-in catalog has sparse detail fields, so the system is careful to ground comparison and recommendation text in fields that are actually present.
+Embeddings were not used because the assignment rewards grounded, reproducible behavior. The deterministic scorer is easier to test, explain, and debug. A lightweight listing-only catalog was tried first, but comparison answers were thin; the final catalog includes detail-page metadata while preserving exact scraped URLs.

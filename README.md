@@ -14,7 +14,7 @@ FastAPI service for the SHL AI Intern take-home assignment. It provides a statel
     {
       "name": "string",
       "url": "string",
-      "test_type": "string"
+      "test_type": "K"
     }
   ],
   "end_of_conversation": false
@@ -22,6 +22,7 @@ FastAPI service for the SHL AI Intern take-home assignment. It provides a statel
 ```
 
 The assistant can clarify vague requests, recommend 1-10 grounded SHL assessments, refine recommendations from conversation history, compare two assessments, and refuse off-topic, legal, non-SHL, general hiring advice, or prompt-injection requests.
+`test_type` uses SHL short codes such as `K`, `P`, `A`, or comma-separated codes for multi-type products.
 
 ## Setup
 
@@ -105,3 +106,24 @@ uvicorn app.main:app --host 0.0.0.0 --port $PORT
 ```
 
 Keep `data/catalog.json` deployed with the app, or set `CATALOG_PATH` to a mounted catalog file.
+
+### Render Deployment
+
+This repository includes `render.yaml`, `Procfile`, and `runtime.txt`.
+
+1. Push the latest code to GitHub.
+2. In Render, create a new Web Service from `https://github.com/Ayushlion8/TalentScope-AI`.
+3. Use:
+   - Build command: `pip install -r requirements.txt`
+   - Start command: `uvicorn app.main:app --host 0.0.0.0 --port $PORT`
+4. Environment variables:
+   - `CATALOG_PATH=data/catalog.json`
+   - `LOG_LEVEL=INFO`
+5. After deploy, verify:
+
+```bash
+curl https://YOUR-RENDER-APP.onrender.com/health
+curl -X POST https://YOUR-RENDER-APP.onrender.com/chat \
+  -H "Content-Type: application/json" \
+  -d '{"messages":[{"role":"user","content":"I need a Java assessment for a mid-level developer"}]}'
+```
