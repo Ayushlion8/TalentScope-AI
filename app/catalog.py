@@ -80,6 +80,12 @@ ROLE_KEYWORDS: dict[str, list[str]] = {
     "leadership": ["leadership", "executive", "c-suite", "ceo", "cfo", "coo", "vp", "vice president", "senior leader"],
 }
 
+EXPLICIT_SKILL_TOKENS = {
+    ".net", "agile", "aws", "azure", "c", "c#", "c++", "cloud", "css",
+    "devops", "excel", "html", "java", "javascript", "linux", "oracle",
+    "pl/sql", "python", "react", "sap", "scrum", "sql", "testing",
+}
+
 STOPWORDS = {
     "a", "an", "and", "are", "as", "at", "be", "for", "from", "i", "in",
     "is", "it", "me", "my", "need", "of", "on", "or", "please", "role",
@@ -277,6 +283,15 @@ class Catalog:
                 if overlap:
                     for w in overlap:
                         score += (15 + 100 * q_word_weights.get(w, 1.0)) * min(q_token_counts[w], 3)
+
+                explicit_skills = q_words & EXPLICIT_SKILL_TOKENS
+                matched_explicit_skill = False
+                for skill in explicit_skills:
+                    if skill in name_words or skill in name or skill in stext:
+                        matched_explicit_skill = True
+                        score += 150 * min(q_token_counts[skill], 3)
+                if explicit_skills and not matched_explicit_skill:
+                    score -= 120
 
                 # Substring matching: each query word as substring in name
                 for qw in q_words:
