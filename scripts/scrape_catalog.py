@@ -196,13 +196,24 @@ def scrape_all_list_pages(client: httpx.Client) -> list[dict]:
     return items
 
 
-def scrape_detail_pages(client: httpx.Client, items: list[dict], validate_urls: bool = False) -> list[dict]:
+def scrape_detail_pages(
+    client: httpx.Client,
+    items: list[dict],
+    validate_urls: bool = False,
+    checkpoint_file: Path | None = None,
+    start_index: int = 0,
+    limit: int | None = None,
+) -> list[dict]:
     """Scrape detail pages for each item to enrich with descriptions etc."""
     total = len(items)
-    for i, item in enumerate(items):
+    end_index = total if limit is None else min(total, start_index + limit)
+    for i, item in enumerate(items[start_index:end_index], start=start_index):
         detail_url = item.get("url", "")
         if not detail_url.startswith(CATALOG_URL_PREFIX):
             logger.warning("Skipping invalid detail URL for %s: %s", item["name"], detail_url)
+            continue
+        if item.get("description") or item.get("job_levels") or item.get("languages") or item.get("duration_minutes"):
+            logger.info("Skipping already enriched detail %d/%d: %s", i + 1, total, item["name"])
             continue
         logger.info("Scraping detail %d/%d: %s", i + 1, total, item["name"])
         try:
@@ -220,6 +231,15 @@ def scrape_detail_pages(client: httpx.Client, items: list[dict], validate_urls: 
             time.sleep(2)
         else:
             time.sleep(0.5)
+        if checkpoint_file and (i + 1) % 10 == 0:
+            with open(checkpoint_file, "w", encoding="utf-8") as f:
+                json.dump(items, f, indent=2, ensure_ascii=False)
+            logger.info("Checkpoint saved to %s at item %d/%d", checkpoint_file, i + 1, total)
+
+    if checkpoint_file:
+        with open(checkpoint_file, "w", encoding="utf-8") as f:
+            json.dump(items, f, indent=2, ensure_ascii=False)
+        logger.info("Checkpoint saved to %s after detail range %d-%d", checkpoint_file, start_index, end_index)
     return items
 
 
@@ -231,15 +251,31 @@ def main():
     listing_only = "--listing-only" in sys.argv
     skip_details = "--skip-details" in sys.argv
     validate_urls = "--validate-urls" in sys.argv
+    enrich_existing = "--enrich-existing" in sys.argv
+    start_index = int(sys.argv[sys.argv.index("--start") + 1]) if "--start" in sys.argv else 0
+    limit = int(sys.argv[sys.argv.index("--limit") + 1]) if "--limit" in sys.argv else None
 
     with httpx.Client() as client:
-        logger.info("=== Scraping listing pages ===")
-        items = scrape_all_list_pages(client)
-        logger.info("Found %d Individual Test Solutions", len(items))
+        if enrich_existing:
+            logger.info("=== Loading existing catalog ===")
+            with open(OUT_FILE, encoding="utf-8") as f:
+                items = json.load(f)
+            logger.info("Loaded %d existing catalog items", len(items))
+        else:
+            logger.info("=== Scraping listing pages ===")
+            items = scrape_all_list_pages(client)
+            logger.info("Found %d Individual Test Solutions", len(items))
 
         if not listing_only and not skip_details:
             logger.info("=== Scraping detail pages ===")
-            items = scrape_detail_pages(client, items, validate_urls=validate_urls)
+            items = scrape_detail_pages(
+                client,
+                items,
+                validate_urls=validate_urls,
+                checkpoint_file=OUT_FILE,
+                start_index=start_index,
+                limit=limit,
+            )
         else:
             logger.info("Skipping detail pages (--listing-only or --skip-details flag)")
 
