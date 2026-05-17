@@ -31,6 +31,10 @@ OFF_TOPIC_PATTERNS = [
     r"\bcareer\s+advice\b",
     r"\btraining\s+program\b",
     r"\bhow\s+to\s+write\b",
+    r"\bnon[-\s]?shl\b",
+    r"\bhackerrank\b",
+    r"\bcodility\b",
+    r"\btestgorilla\b",
 ]
 
 LEGAL_PATTERNS = [
@@ -42,6 +46,16 @@ LEGAL_PATTERNS = [
     r"\bcompliance\b",
     r"\bdiscrimination\b",
     r"\badverse\s+impact\b",
+]
+
+NON_SHL_PATTERNS = [
+    r"\bnon[-\s]?shl\b",
+    r"\bnot\s+shl\b",
+    r"\bhackerrank\b",
+    r"\bcodility\b",
+    r"\btestgorilla\b",
+    r"\bmercer\b",
+    r"\bthomas\s+international\b",
 ]
 
 ASSESSMENT_SCOPE_TERMS = [
@@ -295,6 +309,13 @@ def build_response(messages: list[dict], cat: Catalog | None = None) -> ChatResp
     if _matches_any(latest, LEGAL_PATTERNS):
         return ChatResponse(
             reply="I can help select SHL assessments, but I cannot provide legal or compliance advice.",
+            recommendations=[],
+            end_of_conversation=False,
+        )
+
+    if _matches_any(latest, NON_SHL_PATTERNS):
+        return ChatResponse(
+            reply="I can only recommend SHL catalog assessments. Share the SHL role or skill area you want to assess.",
             recommendations=[],
             end_of_conversation=False,
         )

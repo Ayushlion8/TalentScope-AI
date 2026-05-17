@@ -10,12 +10,18 @@ FastAPI service for the SHL AI Intern take-home assignment. It provides a statel
 ```json
 {
   "reply": "string",
-  "recommendations": [],
+  "recommendations": [
+    {
+      "name": "string",
+      "url": "string",
+      "test_type": "string"
+    }
+  ],
   "end_of_conversation": false
 }
 ```
 
-The assistant can clarify vague requests, recommend 1-10 grounded SHL assessments, refine recommendations from conversation history, compare two assessments, and refuse off-topic, legal, general hiring advice, or prompt-injection requests.
+The assistant can clarify vague requests, recommend 1-10 grounded SHL assessments, refine recommendations from conversation history, compare two assessments, and refuse off-topic, legal, non-SHL, general hiring advice, or prompt-injection requests.
 
 ## Setup
 
@@ -68,6 +74,7 @@ pytest -q
 ```
 
 Current suite covers health, strict schema behavior, clarification, recommendations, refinement, comparison, refusal, catalog grounding, max recommendation count, and conversation cap handling.
+It also checks evaluator-style SQL, Java, Python, and personality queries for Recall@10 quality.
 
 ## Catalog
 

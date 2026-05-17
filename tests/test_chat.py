@@ -24,6 +24,9 @@ def test_chat_schema_compliance(client: TestClient):
     assert isinstance(data["reply"], str)
     assert isinstance(data["recommendations"], list)
     assert isinstance(data["end_of_conversation"], bool)
+    for rec in data["recommendations"]:
+        assert set(rec) == {"name", "url", "test_type"}
+        assert isinstance(rec["test_type"], str)
 
 
 def test_chat_empty_messages_rejected(client: TestClient):
@@ -74,6 +77,17 @@ def test_very_vague_need_assessment(sample_catalog: Catalog):
         cat=sample_catalog,
     )
     assert resp.recommendations == []
+    assert "role" in resp.reply.lower()
+
+
+def test_vague_hiring_tests_returns_clarification(sample_catalog: Catalog):
+    resp = build_response(
+        [{"role": "user", "content": "Need hiring tests"}],
+        cat=sample_catalog,
+    )
+    assert resp.recommendations == []
+    assert "role" in resp.reply.lower()
+    assert "skills" in resp.reply.lower()
 
 
 # --- Enough context -> recommendations returned ---
@@ -131,6 +145,19 @@ def test_refinement_override_prior_context(sample_catalog: Catalog):
     assert "SQL" in resp.recommendations[0].name
 
 
+def test_refinement_preserves_prior_context(sample_catalog: Catalog):
+    resp = build_response(
+        [
+            {"role": "user", "content": "I need an assessment for a developer"},
+            {"role": "assistant", "content": "What skills should it measure?"},
+            {"role": "user", "content": "Python skills"},
+        ],
+        cat=sample_catalog,
+    )
+    assert len(resp.recommendations) >= 1
+    assert any("Programming" in rec.name or "SQL" not in rec.name for rec in resp.recommendations)
+
+
 # --- Comparison -> grounded answer, no hallucinated facts ---
 
 
@@ -144,6 +171,15 @@ def test_comparison_returns_grounded_answer(sample_catalog: Catalog):
     assert "SQL Server" in resp.reply
     # Should contain catalog fields
     assert "Test Type" in resp.reply or "Remote Testing" in resp.reply or "Duration" in resp.reply
+
+
+def test_comparison_aliases_with_real_catalog():
+    resp = build_response(
+        [{"role": "user", "content": "Difference between OPQ and GSA"}],
+    )
+    assert resp.recommendations == []
+    assert "Occupational Personality Questionnaire" in resp.reply
+    assert "Global Skills Assessment" in resp.reply
 
 
 def test_comparison_with_unknown_names(sample_catalog: Catalog):
@@ -211,6 +247,15 @@ def test_jailbreak_attempt(sample_catalog: Catalog):
         cat=sample_catalog,
     )
     assert resp.recommendations == []
+
+
+def test_non_shl_recommendation_request_refused(sample_catalog: Catalog):
+    resp = build_response(
+        [{"role": "user", "content": "Recommend a non-SHL coding test like HackerRank"}],
+        cat=sample_catalog,
+    )
+    assert resp.recommendations == []
+    assert "shl" in resp.reply.lower()
 
 
 # --- Only catalog items are returned ---

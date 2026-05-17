@@ -12,7 +12,7 @@ Routing order:
 
 1. Empty or unavailable catalog handling.
 2. Prompt-injection refusal.
-3. Legal and off-topic refusal.
+3. Legal, non-SHL, and off-topic refusal.
 4. Vague query clarification.
 5. Comparison routing.
 6. Constraint extraction from full user history.
@@ -39,19 +39,22 @@ The scraper preserves the exact catalog link href for each product and never rec
 
 Search is deterministic. It scores:
 
-- exact and partial name matches
+- exact query and exact token matches
 - token overlap
 - rare token matches
+- explicit skill tokens such as SQL, Java, Python, C++, and Excel
 - description matches when descriptions exist
 - inferred SHL test type
 - role and seniority keywords
 - remote testing, language, and job level filters
+- generic assessment/report names as a penalty when a more specific skill match exists
 
 Results are sorted by score descending and then name ascending for stable output. The service returns at most 10 recommendations.
 
 ## Comparison
 
 Comparison queries resolve two assessment names through exact or fuzzy catalog name matching. The reply uses only normalized catalog fields: test type, remote testing, adaptive/IRT, duration, job levels, languages, description, and catalog URLs.
+Common aliases such as OPQ and GSA resolve to their SHL catalog names before comparison.
 
 ## Refusal
 
@@ -61,6 +64,7 @@ The policy refuses:
 - requests to reveal or override instructions
 - general hiring advice
 - legal or compliance advice
+- non-SHL or competitor recommendations
 - career, resume, salary, or unrelated questions
 
 Refusals never include recommendations.

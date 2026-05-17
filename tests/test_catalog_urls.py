@@ -62,3 +62,19 @@ def test_real_catalog_recommendation_urls_exactly_match_catalog_entries():
         for rec in resp.recommendations:
             assert rec.url.startswith(CATALOG_URL_PREFIX)
             assert rec.url == catalog_by_name[rec.name]
+
+
+def test_recall_at_10_for_evaluator_queries():
+    cat = Catalog()
+    cat.load()
+    scenarios = {
+        "I need a SQL skills assessment for a mid-level developer": ["SQL", "PL/SQL"],
+        "I need a Java programming assessment for developers": ["Java"],
+        "I need a Python coding assessment for developers": ["Python", "Live Coding"],
+        "I want to assess personality traits for a manager role": ["OPQ", "Personality", "Manager"],
+    }
+    for query, expected_terms in scenarios.items():
+        resp = build_response([{"role": "user", "content": query}], cat=cat)
+        names = [rec.name for rec in resp.recommendations]
+        assert 1 <= len(names) <= 10
+        assert any(any(term.lower() in name.lower() for term in expected_terms) for name in names[:3])
