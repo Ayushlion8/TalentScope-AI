@@ -1,0 +1,5380 @@
+[
+  {
+    "name": "Global Skills Development Report",
+    "slug": "global-skills-development-report",
+    "url": "https://www.shl.com/products/product-catalog/view/global-skills-development-report/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "A",
+      "E",
+      "B",
+      "C",
+      "D",
+      "P"
+    ],
+    "test_types": [
+      "Ability & Aptitude",
+      "Assessment Exercises",
+      "Biodata & Situational Judgement",
+      "Competencies",
+      "Development & 360",
+      "Personality & Behavior"
+    ],
+    "entity_id": "4302"
+  },
+  {
+    "name": ".NET Framework 4.5",
+    "slug": "net-framework-4-5",
+    "url": "https://www.shl.com/products/product-catalog/view/net-framework-4-5/",
+    "remote_testing": true,
+    "adaptive_irt": true,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "3827"
+  },
+  {
+    "name": ".NET MVC (New)",
+    "slug": "net-mvc-new",
+    "url": "https://www.shl.com/products/product-catalog/view/net-mvc-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4094"
+  },
+  {
+    "name": ".NET MVVM (New)",
+    "slug": "net-mvvm-new",
+    "url": "https://www.shl.com/products/product-catalog/view/net-mvvm-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4099"
+  },
+  {
+    "name": ".NET WCF (New)",
+    "slug": "net-wcf-new",
+    "url": "https://www.shl.com/products/product-catalog/view/net-wcf-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4018"
+  },
+  {
+    "name": ".NET WPF (New)",
+    "slug": "net-wpf-new",
+    "url": "https://www.shl.com/products/product-catalog/view/net-wpf-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4016"
+  },
+  {
+    "name": ".NET XAML (New)",
+    "slug": "net-xaml-new",
+    "url": "https://www.shl.com/products/product-catalog/view/net-xaml-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4165"
+  },
+  {
+    "name": "Accounts Payable (New)",
+    "slug": "accounts-payable-new",
+    "url": "https://www.shl.com/products/product-catalog/view/accounts-payable-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4178"
+  },
+  {
+    "name": "Accounts Payable Simulation (New)",
+    "slug": "accounts-payable-simulation-new",
+    "url": "https://www.shl.com/products/product-catalog/view/accounts-payable-simulation-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "S"
+    ],
+    "test_types": [
+      "Simulations"
+    ],
+    "entity_id": "4187"
+  },
+  {
+    "name": "Accounts Receivable (New)",
+    "slug": "accounts-receivable-new",
+    "url": "https://www.shl.com/products/product-catalog/view/accounts-receivable-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4179"
+  },
+  {
+    "name": "Accounts Receivable Simulation (New)",
+    "slug": "accounts-receivable-simulation-new",
+    "url": "https://www.shl.com/products/product-catalog/view/accounts-receivable-simulation-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "S"
+    ],
+    "test_types": [
+      "Simulations"
+    ],
+    "entity_id": "4188"
+  },
+  {
+    "name": "ADO.NET (New)",
+    "slug": "ado-net-new",
+    "url": "https://www.shl.com/products/product-catalog/view/ado-net-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4168"
+  },
+  {
+    "name": "Adobe Experience Manager (New)",
+    "slug": "adobe-experience-manager-new",
+    "url": "https://www.shl.com/products/product-catalog/view/adobe-experience-manager-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4019"
+  },
+  {
+    "name": "Adobe Photoshop CC",
+    "slug": "adobe-photoshop-cc",
+    "url": "https://www.shl.com/products/product-catalog/view/adobe-photoshop-cc/",
+    "remote_testing": true,
+    "adaptive_irt": true,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "3778"
+  },
+  {
+    "name": "Aeronautical Engineering (New)",
+    "slug": "aeronautical-engineering-new",
+    "url": "https://www.shl.com/products/product-catalog/view/aeronautical-engineering-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4069"
+  },
+  {
+    "name": "Aerospace Engineering (New)",
+    "slug": "aerospace-engineering-new",
+    "url": "https://www.shl.com/products/product-catalog/view/aerospace-engineering-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4004"
+  },
+  {
+    "name": "Agile Software Development",
+    "slug": "agile-software-development",
+    "url": "https://www.shl.com/products/product-catalog/view/agile-software-development/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4223"
+  },
+  {
+    "name": "Agile Testing (New)",
+    "slug": "agile-testing-new",
+    "url": "https://www.shl.com/products/product-catalog/view/agile-testing-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4159"
+  },
+  {
+    "name": "AI Skills",
+    "slug": "ai-skills",
+    "url": "https://www.shl.com/products/product-catalog/view/ai-skills/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "P"
+    ],
+    "test_types": [
+      "Personality & Behavior"
+    ],
+    "entity_id": "4311"
+  },
+  {
+    "name": "Amazon Web Services (AWS) Development (New)",
+    "slug": "amazon-web-services-aws-development-new",
+    "url": "https://www.shl.com/products/product-catalog/view/amazon-web-services-aws-development-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4028"
+  },
+  {
+    "name": "Android Development (New)",
+    "slug": "android-development-new",
+    "url": "https://www.shl.com/products/product-catalog/view/android-development-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4160"
+  },
+  {
+    "name": "Angular 6 (New)",
+    "slug": "angular-6-new",
+    "url": "https://www.shl.com/products/product-catalog/view/angular-6-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4153"
+  },
+  {
+    "name": "AngularJS (New)",
+    "slug": "angularjs-new",
+    "url": "https://www.shl.com/products/product-catalog/view/angularjs-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4021"
+  },
+  {
+    "name": "Apache Hadoop (New)",
+    "slug": "apache-hadoop-new",
+    "url": "https://www.shl.com/products/product-catalog/view/apache-hadoop-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4030"
+  },
+  {
+    "name": "Apache Hadoop Extensions (New)",
+    "slug": "apache-hadoop-extensions-new",
+    "url": "https://www.shl.com/products/product-catalog/view/apache-hadoop-extensions-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4011"
+  },
+  {
+    "name": "Apache HBase (New)",
+    "slug": "apache-hbase-new",
+    "url": "https://www.shl.com/products/product-catalog/view/apache-hbase-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4073"
+  },
+  {
+    "name": "Apache Hive (New)",
+    "slug": "apache-hive-new",
+    "url": "https://www.shl.com/products/product-catalog/view/apache-hive-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4075"
+  },
+  {
+    "name": "Apache Kafka (New)",
+    "slug": "apache-kafka-new",
+    "url": "https://www.shl.com/products/product-catalog/view/apache-kafka-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4022"
+  },
+  {
+    "name": "Apache Pig (New)",
+    "slug": "apache-pig-new",
+    "url": "https://www.shl.com/products/product-catalog/view/apache-pig-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4115"
+  },
+  {
+    "name": "Apache Spark (New)",
+    "slug": "apache-spark-new",
+    "url": "https://www.shl.com/products/product-catalog/view/apache-spark-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4023"
+  },
+  {
+    "name": "ASP .NET with C# (New)",
+    "slug": "asp-net-with-c-new",
+    "url": "https://www.shl.com/products/product-catalog/view/asp-net-with-c-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4017"
+  },
+  {
+    "name": "ASP.NET 4.5",
+    "slug": "asp-net-4-5",
+    "url": "https://www.shl.com/products/product-catalog/view/asp-net-4-5/",
+    "remote_testing": true,
+    "adaptive_irt": true,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "3786"
+  },
+  {
+    "name": "Assessment and Development Center Exercises",
+    "slug": "assessment-and-development-center-exercises",
+    "url": "https://www.shl.com/products/product-catalog/view/assessment-and-development-center-exercises/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "E"
+    ],
+    "test_types": [
+      "Assessment Exercises"
+    ],
+    "entity_id": "4219"
+  },
+  {
+    "name": "Automata - Fix (New)",
+    "slug": "automata-fix-new",
+    "url": "https://www.shl.com/products/product-catalog/view/automata-fix-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "S"
+    ],
+    "test_types": [
+      "Simulations"
+    ],
+    "entity_id": "3980"
+  },
+  {
+    "name": "Automata - SQL (New)",
+    "slug": "automata-sql-new",
+    "url": "https://www.shl.com/products/product-catalog/view/automata-sql-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "S"
+    ],
+    "test_types": [
+      "Simulations"
+    ],
+    "entity_id": "3981"
+  },
+  {
+    "name": "Automata (New)",
+    "slug": "automata-new",
+    "url": "https://www.shl.com/products/product-catalog/view/automata-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "S"
+    ],
+    "test_types": [
+      "Simulations"
+    ],
+    "entity_id": "3984"
+  },
+  {
+    "name": "Automata Data Science (New)",
+    "slug": "automata-data-science-new",
+    "url": "https://www.shl.com/products/product-catalog/view/automata-data-science-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "S"
+    ],
+    "test_types": [
+      "Simulations"
+    ],
+    "entity_id": "3982"
+  },
+  {
+    "name": "Automata Data Science Pro (New)",
+    "slug": "automata-data-science-pro-new",
+    "url": "https://www.shl.com/products/product-catalog/view/automata-data-science-pro-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "S"
+    ],
+    "test_types": [
+      "Simulations"
+    ],
+    "entity_id": "3983"
+  },
+  {
+    "name": "Automata Front End",
+    "slug": "automata-front-end",
+    "url": "https://www.shl.com/products/product-catalog/view/automata-front-end/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "S"
+    ],
+    "test_types": [
+      "Simulations"
+    ],
+    "entity_id": "4222"
+  },
+  {
+    "name": "Automata Pro (New)",
+    "slug": "automata-pro-new",
+    "url": "https://www.shl.com/products/product-catalog/view/automata-pro-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "S"
+    ],
+    "test_types": [
+      "Simulations"
+    ],
+    "entity_id": "3985"
+  },
+  {
+    "name": "Automata Selenium",
+    "slug": "automata-selenium",
+    "url": "https://www.shl.com/products/product-catalog/view/automata-selenium/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "S"
+    ],
+    "test_types": [
+      "Simulations"
+    ],
+    "entity_id": "4229"
+  },
+  {
+    "name": "Automation Anywhere RPA Development (New)",
+    "slug": "automation-anywhere-rpa-development-new",
+    "url": "https://www.shl.com/products/product-catalog/view/automation-anywhere-rpa-development-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4026"
+  },
+  {
+    "name": "Automotive Engineering (New)",
+    "slug": "automotive-engineering-new",
+    "url": "https://www.shl.com/products/product-catalog/view/automotive-engineering-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4025"
+  },
+  {
+    "name": "Basic Biology (New)",
+    "slug": "basic-biology-new",
+    "url": "https://www.shl.com/products/product-catalog/view/basic-biology-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "3988"
+  },
+  {
+    "name": "Basic Computer Literacy (Windows 10) (New)",
+    "slug": "basic-computer-literacy-windows-10-new",
+    "url": "https://www.shl.com/products/product-catalog/view/basic-computer-literacy-windows-10-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "S",
+      "K"
+    ],
+    "test_types": [
+      "Simulations",
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4206"
+  },
+  {
+    "name": "Basic Statistics (New)",
+    "slug": "basic-statistics-new",
+    "url": "https://www.shl.com/products/product-catalog/view/basic-statistics-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4149"
+  },
+  {
+    "name": "Biochemistry (New)",
+    "slug": "biochemistry-new",
+    "url": "https://www.shl.com/products/product-catalog/view/biochemistry-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4161"
+  },
+  {
+    "name": "Biotech Lab Techniques (New)",
+    "slug": "biotech-lab-techniques-new",
+    "url": "https://www.shl.com/products/product-catalog/view/biotech-lab-techniques-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4036"
+  },
+  {
+    "name": "BizTalk (New)",
+    "slug": "biztalk-new",
+    "url": "https://www.shl.com/products/product-catalog/view/biztalk-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4037"
+  },
+  {
+    "name": "Business Communication (adaptive)",
+    "slug": "business-communication-adaptive",
+    "url": "https://www.shl.com/products/product-catalog/view/business-communication-adaptive/",
+    "remote_testing": true,
+    "adaptive_irt": true,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "244"
+  },
+  {
+    "name": "Business Communications",
+    "slug": "business-communications",
+    "url": "https://www.shl.com/products/product-catalog/view/business-communications/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "536"
+  },
+  {
+    "name": "C Programming (New)",
+    "slug": "c-programming-new",
+    "url": "https://www.shl.com/products/product-catalog/view/c-programming-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4038"
+  },
+  {
+    "name": "C# Programming (New)",
+    "slug": "c-programming-new-4039",
+    "url": "https://www.shl.com/products/product-catalog/view/c-programming-new-4039/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4039"
+  },
+  {
+    "name": "C++ Programming (New)",
+    "slug": "c-programming-new-4122",
+    "url": "https://www.shl.com/products/product-catalog/view/c-programming-new-4122/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4122"
+  },
+  {
+    "name": "Cardiology and Diabetes Management (New)",
+    "slug": "cardiology-and-diabetes-management-new",
+    "url": "https://www.shl.com/products/product-catalog/view/cardiology-and-diabetes-management-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4077"
+  },
+  {
+    "name": "Ceramic Engineering (New)",
+    "slug": "ceramic-engineering-new",
+    "url": "https://www.shl.com/products/product-catalog/view/ceramic-engineering-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4044"
+  },
+  {
+    "name": "Chemical Engineering (New)",
+    "slug": "chemical-engineering-new",
+    "url": "https://www.shl.com/products/product-catalog/view/chemical-engineering-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4012"
+  },
+  {
+    "name": "Cisco AppDynamics (New)",
+    "slug": "cisco-appdynamics-new",
+    "url": "https://www.shl.com/products/product-catalog/view/cisco-appdynamics-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4024"
+  },
+  {
+    "name": "Civil Engineering (New)",
+    "slug": "civil-engineering-new",
+    "url": "https://www.shl.com/products/product-catalog/view/civil-engineering-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4150"
+  },
+  {
+    "name": "Cloud Computing (New)",
+    "slug": "cloud-computing-new",
+    "url": "https://www.shl.com/products/product-catalog/view/cloud-computing-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4045"
+  },
+  {
+    "name": "COBOL Programming (New)",
+    "slug": "cobol-programming-new",
+    "url": "https://www.shl.com/products/product-catalog/view/cobol-programming-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4046"
+  },
+  {
+    "name": "Computer Science (New)",
+    "slug": "computer-science-new",
+    "url": "https://www.shl.com/products/product-catalog/view/computer-science-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4104"
+  },
+  {
+    "name": "Contact Center Call Simulation (New)",
+    "slug": "contact-center-call-simulation-new",
+    "url": "https://www.shl.com/products/product-catalog/view/contact-center-call-simulation-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "S"
+    ],
+    "test_types": [
+      "Simulations"
+    ],
+    "entity_id": "4189"
+  },
+  {
+    "name": "Conversational Multichat Simulation",
+    "slug": "conversational-multichat-simulation",
+    "url": "https://www.shl.com/products/product-catalog/view/conversational-multichat-simulation/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "S"
+    ],
+    "test_types": [
+      "Simulations"
+    ],
+    "entity_id": "4296"
+  },
+  {
+    "name": "Core Java (Advanced Level) (New)",
+    "slug": "core-java-advanced-level-new",
+    "url": "https://www.shl.com/products/product-catalog/view/core-java-advanced-level-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4034"
+  },
+  {
+    "name": "Core Java (Entry Level) (New)",
+    "slug": "core-java-entry-level-new",
+    "url": "https://www.shl.com/products/product-catalog/view/core-java-entry-level-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4032"
+  },
+  {
+    "name": "Count Out The Money",
+    "slug": "count-out-the-money",
+    "url": "https://www.shl.com/products/product-catalog/view/count-out-the-money/",
+    "remote_testing": true,
+    "adaptive_irt": true,
+    "test_type_keys": [
+      "K",
+      "S"
+    ],
+    "test_types": [
+      "Knowledge & Skills",
+      "Simulations"
+    ],
+    "entity_id": "3458"
+  },
+  {
+    "name": "CSS3 (New)",
+    "slug": "css3-new",
+    "url": "https://www.shl.com/products/product-catalog/view/css3-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4052"
+  },
+  {
+    "name": "Culinary Skills (New)",
+    "slug": "culinary-skills-new",
+    "url": "https://www.shl.com/products/product-catalog/view/culinary-skills-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4050"
+  },
+  {
+    "name": "Customer Service Phone Simulation",
+    "slug": "customer-service-phone-simulation",
+    "url": "https://www.shl.com/products/product-catalog/view/customer-service-phone-simulation/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "B",
+      "S"
+    ],
+    "test_types": [
+      "Biodata & Situational Judgement",
+      "Simulations"
+    ],
+    "entity_id": "3933"
+  },
+  {
+    "name": "Customer Service Phone Solution",
+    "slug": "customer-service-phone-solution",
+    "url": "https://www.shl.com/products/product-catalog/view/customer-service-phone-solution/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "B",
+      "P",
+      "S"
+    ],
+    "test_types": [
+      "Biodata & Situational Judgement",
+      "Personality & Behavior",
+      "Simulations"
+    ],
+    "entity_id": "3931"
+  },
+  {
+    "name": "Cyber Risk (New)",
+    "slug": "cyber-risk-new",
+    "url": "https://www.shl.com/products/product-catalog/view/cyber-risk-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4053"
+  },
+  {
+    "name": "Data Entry (New)",
+    "slug": "data-entry-new",
+    "url": "https://www.shl.com/products/product-catalog/view/data-entry-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "S"
+    ],
+    "test_types": [
+      "Simulations"
+    ],
+    "entity_id": "4186"
+  },
+  {
+    "name": "Data Entry Alphanumeric Split Screen - US",
+    "slug": "data-entry-alphanumeric-split-screen-us",
+    "url": "https://www.shl.com/products/product-catalog/view/data-entry-alphanumeric-split-screen-us/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "778"
+  },
+  {
+    "name": "Data Entry Numeric Split Screen - US",
+    "slug": "data-entry-numeric-split-screen-us",
+    "url": "https://www.shl.com/products/product-catalog/view/data-entry-numeric-split-screen-us/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "779"
+  },
+  {
+    "name": "Data Entry Ten Key Split Screen",
+    "slug": "data-entry-ten-key-split-screen",
+    "url": "https://www.shl.com/products/product-catalog/view/data-entry-ten-key-split-screen/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "785"
+  },
+  {
+    "name": "Data Science (New)",
+    "slug": "data-science-new",
+    "url": "https://www.shl.com/products/product-catalog/view/data-science-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4013"
+  },
+  {
+    "name": "Data Warehousing Concepts",
+    "slug": "data-warehousing-concepts",
+    "url": "https://www.shl.com/products/product-catalog/view/data-warehousing-concepts/",
+    "remote_testing": true,
+    "adaptive_irt": true,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "56"
+  },
+  {
+    "name": "Dependability and Safety Instrument (DSI)",
+    "slug": "dependability-and-safety-instrument-dsi",
+    "url": "https://www.shl.com/products/product-catalog/view/dependability-and-safety-instrument-dsi/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "P"
+    ],
+    "test_types": [
+      "Personality & Behavior"
+    ],
+    "entity_id": "731"
+  },
+  {
+    "name": "Dermatology (New)",
+    "slug": "dermatology-new",
+    "url": "https://www.shl.com/products/product-catalog/view/dermatology-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4162"
+  },
+  {
+    "name": "Desktop Support (New)",
+    "slug": "desktop-support-new",
+    "url": "https://www.shl.com/products/product-catalog/view/desktop-support-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4101"
+  },
+  {
+    "name": "Digital Advertising (New)",
+    "slug": "digital-advertising-new",
+    "url": "https://www.shl.com/products/product-catalog/view/digital-advertising-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4003"
+  },
+  {
+    "name": "Digital Readiness Development Report - IC",
+    "slug": "digital-readiness-development-report",
+    "url": "https://www.shl.com/products/product-catalog/view/digital-readiness-development-report/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "P"
+    ],
+    "test_types": [
+      "Personality & Behavior"
+    ],
+    "entity_id": "4221"
+  },
+  {
+    "name": "Digital Readiness Development Report - Manager",
+    "slug": "digital-readiness-development-report-manager",
+    "url": "https://www.shl.com/products/product-catalog/view/digital-readiness-development-report-manager/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "P"
+    ],
+    "test_types": [
+      "Personality & Behavior"
+    ],
+    "entity_id": "4239"
+  },
+  {
+    "name": "Docker (New)",
+    "slug": "docker-new",
+    "url": "https://www.shl.com/products/product-catalog/view/docker-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4059"
+  },
+  {
+    "name": "Dojo (New)",
+    "slug": "dojo-new",
+    "url": "https://www.shl.com/products/product-catalog/view/dojo-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4060"
+  },
+  {
+    "name": "Drupal (New)",
+    "slug": "drupal-new",
+    "url": "https://www.shl.com/products/product-catalog/view/drupal-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4062"
+  },
+  {
+    "name": "DSI v1.1 Interpretation Report",
+    "slug": "dsi-v1-1-interpretation-report",
+    "url": "https://www.shl.com/products/product-catalog/view/dsi-v1-1-interpretation-report/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "P"
+    ],
+    "test_types": [
+      "Personality & Behavior"
+    ],
+    "entity_id": "1102"
+  },
+  {
+    "name": "Econometrics (New)",
+    "slug": "econometrics-new",
+    "url": "https://www.shl.com/products/product-catalog/view/econometrics-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4148"
+  },
+  {
+    "name": "Economics (New)",
+    "slug": "economics-new",
+    "url": "https://www.shl.com/products/product-catalog/view/economics-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4009"
+  },
+  {
+    "name": "Electrical and Electronics Engineering (New)",
+    "slug": "electrical-and-electronics-engineering-new",
+    "url": "https://www.shl.com/products/product-catalog/view/electrical-and-electronics-engineering-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4001"
+  },
+  {
+    "name": "Electrical Engineering (New)",
+    "slug": "electrical-engineering-new",
+    "url": "https://www.shl.com/products/product-catalog/view/electrical-engineering-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4031"
+  },
+  {
+    "name": "Electronics & Telecommunications Engineering (New)",
+    "slug": "electronics-and-telecommunications-engineering-new",
+    "url": "https://www.shl.com/products/product-catalog/view/electronics-and-telecommunications-engineering-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4002"
+  },
+  {
+    "name": "Electronics and Embedded Systems Engineering (New)",
+    "slug": "electronics-and-embedded-systems-engineering-new",
+    "url": "https://www.shl.com/products/product-catalog/view/electronics-and-embedded-systems-engineering-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4000"
+  },
+  {
+    "name": "Electronics and Semiconductor Engineering (New)",
+    "slug": "electronics-and-semiconductor-engineering-new",
+    "url": "https://www.shl.com/products/product-catalog/view/electronics-and-semiconductor-engineering-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4139"
+  },
+  {
+    "name": "English Comprehension (New)",
+    "slug": "english-comprehension-new",
+    "url": "https://www.shl.com/products/product-catalog/view/english-comprehension-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4180"
+  },
+  {
+    "name": "Enterprise Java Beans (New)",
+    "slug": "enterprise-java-beans-new",
+    "url": "https://www.shl.com/products/product-catalog/view/enterprise-java-beans-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4063"
+  },
+  {
+    "name": "Enterprise Leadership Report 1.0",
+    "slug": "enterprise-leadership-report",
+    "url": "https://www.shl.com/products/product-catalog/view/enterprise-leadership-report/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "P"
+    ],
+    "test_types": [
+      "Personality & Behavior"
+    ],
+    "entity_id": "3856"
+  },
+  {
+    "name": "Enterprise Leadership Report 2.0",
+    "slug": "enterprise-leadership-report-2-0",
+    "url": "https://www.shl.com/products/product-catalog/view/enterprise-leadership-report-2-0/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "P"
+    ],
+    "test_types": [
+      "Personality & Behavior"
+    ],
+    "entity_id": "4287"
+  },
+  {
+    "name": "Entry Level Cashier Solution",
+    "slug": "entry-level-cashier-solution",
+    "url": "https://www.shl.com/products/product-catalog/view/entry-level-cashier-solution/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "C",
+      "P"
+    ],
+    "test_types": [
+      "Competencies",
+      "Personality & Behavior"
+    ],
+    "entity_id": "3934"
+  },
+  {
+    "name": "Entry Level Customer Serv-Retail & Contact Center",
+    "slug": "entry-level-customer-serv-retail-and-contact-center",
+    "url": "https://www.shl.com/products/product-catalog/view/entry-level-customer-serv-retail-and-contact-center/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "P",
+      "C"
+    ],
+    "test_types": [
+      "Personality & Behavior",
+      "Competencies"
+    ],
+    "entity_id": "3939"
+  },
+  {
+    "name": "Entry Level Customer Service (General) Solution",
+    "slug": "entry-level-customer-service-general-solution",
+    "url": "https://www.shl.com/products/product-catalog/view/entry-level-customer-service-general-solution/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "C",
+      "P"
+    ],
+    "test_types": [
+      "Competencies",
+      "Personality & Behavior"
+    ],
+    "entity_id": "3935"
+  },
+  {
+    "name": "Entry Level Hotel Front Desk Solution",
+    "slug": "entry-level-hotel-front-desk-solution",
+    "url": "https://www.shl.com/products/product-catalog/view/entry-level-hotel-front-desk-solution/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "C",
+      "P"
+    ],
+    "test_types": [
+      "Competencies",
+      "Personality & Behavior"
+    ],
+    "entity_id": "3936"
+  },
+  {
+    "name": "Entry Level Sales Solution",
+    "slug": "entry-level-sales-solution",
+    "url": "https://www.shl.com/products/product-catalog/view/entry-level-sales-solution/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "C",
+      "P"
+    ],
+    "test_types": [
+      "Competencies",
+      "Personality & Behavior"
+    ],
+    "entity_id": "3937"
+  },
+  {
+    "name": "Entry Level Technical Support Solution",
+    "slug": "entry-level-technical-support-solution",
+    "url": "https://www.shl.com/products/product-catalog/view/entry-level-technical-support-solution/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "P",
+      "C"
+    ],
+    "test_types": [
+      "Personality & Behavior",
+      "Competencies"
+    ],
+    "entity_id": "3938"
+  },
+  {
+    "name": "ETL Testing (New)",
+    "slug": "etl-testing-new",
+    "url": "https://www.shl.com/products/product-catalog/view/etl-testing-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4065"
+  },
+  {
+    "name": "Executive Scenarios",
+    "slug": "executive-scenarios",
+    "url": "https://www.shl.com/products/product-catalog/view/executive-scenarios/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "B"
+    ],
+    "test_types": [
+      "Biodata & Situational Judgement"
+    ],
+    "entity_id": "743"
+  },
+  {
+    "name": "Executive Scenarios Narrative Report",
+    "slug": "executive-scenarios-narrative-report",
+    "url": "https://www.shl.com/products/product-catalog/view/executive-scenarios-narrative-report/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "B"
+    ],
+    "test_types": [
+      "Biodata & Situational Judgement"
+    ],
+    "entity_id": "3849"
+  },
+  {
+    "name": "Executive Scenarios Profile Report",
+    "slug": "executive-scenarios-profile-report",
+    "url": "https://www.shl.com/products/product-catalog/view/executive-scenarios-profile-report/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "B"
+    ],
+    "test_types": [
+      "Biodata & Situational Judgement"
+    ],
+    "entity_id": "3899"
+  },
+  {
+    "name": "ExpressJS (New)",
+    "slug": "expressjs-new",
+    "url": "https://www.shl.com/products/product-catalog/view/expressjs-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4127"
+  },
+  {
+    "name": "Filing - Names (R1)",
+    "slug": "filing-names-r1",
+    "url": "https://www.shl.com/products/product-catalog/view/filing-names-r1/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "380"
+  },
+  {
+    "name": "Filing - Numbers",
+    "slug": "filing-numbers",
+    "url": "https://www.shl.com/products/product-catalog/view/filing-numbers/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "381"
+  },
+  {
+    "name": "Financial Accounting (New)",
+    "slug": "financial-accounting-new",
+    "url": "https://www.shl.com/products/product-catalog/view/financial-accounting-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "3992"
+  },
+  {
+    "name": "Financial and Banking Services (New)",
+    "slug": "financial-and-banking-services-new",
+    "url": "https://www.shl.com/products/product-catalog/view/financial-and-banking-services-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4083"
+  },
+  {
+    "name": "Fire Engineering (New)",
+    "slug": "fire-engineering-new",
+    "url": "https://www.shl.com/products/product-catalog/view/fire-engineering-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4067"
+  },
+  {
+    "name": "Following Instructions v1 - UK (R1)",
+    "slug": "following-instructions-v1-uk-r1",
+    "url": "https://www.shl.com/products/product-catalog/view/following-instructions-v1-uk-r1/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "382"
+  },
+  {
+    "name": "Following Instructions v1 - US (R2)",
+    "slug": "following-instructions-v1-us-r2",
+    "url": "https://www.shl.com/products/product-catalog/view/following-instructions-v1-us-r2/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "383"
+  },
+  {
+    "name": "Food and Beverage Services (New)",
+    "slug": "food-and-beverage-services-new",
+    "url": "https://www.shl.com/products/product-catalog/view/food-and-beverage-services-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4090"
+  },
+  {
+    "name": "Food Science (New)",
+    "slug": "food-science-new",
+    "url": "https://www.shl.com/products/product-catalog/view/food-science-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4071"
+  },
+  {
+    "name": "Front Office Management (New)",
+    "slug": "front-office-management-new",
+    "url": "https://www.shl.com/products/product-catalog/view/front-office-management-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4072"
+  },
+  {
+    "name": "Fundamentals of Chemistry (New)",
+    "slug": "fundamentals-of-chemistry-new",
+    "url": "https://www.shl.com/products/product-catalog/view/fundamentals-of-chemistry-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4113"
+  },
+  {
+    "name": "Fundamentals of Physics (New)",
+    "slug": "fundamentals-of-physics-new",
+    "url": "https://www.shl.com/products/product-catalog/view/fundamentals-of-physics-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4043"
+  },
+  {
+    "name": "General Diseases (New)",
+    "slug": "general-diseases-new",
+    "url": "https://www.shl.com/products/product-catalog/view/general-diseases-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4048"
+  },
+  {
+    "name": "Geoinformatics Engineering (New)",
+    "slug": "geoinformatics-engineering-new",
+    "url": "https://www.shl.com/products/product-catalog/view/geoinformatics-engineering-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4125"
+  },
+  {
+    "name": "Geoscience Engineering (New)",
+    "slug": "geoscience-engineering-new",
+    "url": "https://www.shl.com/products/product-catalog/view/geoscience-engineering-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4066"
+  },
+  {
+    "name": "GIT (New)",
+    "slug": "git-new",
+    "url": "https://www.shl.com/products/product-catalog/view/git-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4078"
+  },
+  {
+    "name": "Global Skills Assessment",
+    "slug": "global-skills-assessment",
+    "url": "https://www.shl.com/products/product-catalog/view/global-skills-assessment/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "C",
+      "K"
+    ],
+    "test_types": [
+      "Competencies",
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4301"
+  },
+  {
+    "name": "Graduate Scenarios",
+    "slug": "graduate-scenarios",
+    "url": "https://www.shl.com/products/product-catalog/view/graduate-scenarios/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "B"
+    ],
+    "test_types": [
+      "Biodata & Situational Judgement"
+    ],
+    "entity_id": "741"
+  },
+  {
+    "name": "Graduate Scenarios Narrative Report",
+    "slug": "graduate-scenarios-narrative-report",
+    "url": "https://www.shl.com/products/product-catalog/view/graduate-scenarios-narrative-report/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "B"
+    ],
+    "test_types": [
+      "Biodata & Situational Judgement"
+    ],
+    "entity_id": "3900"
+  },
+  {
+    "name": "Graduate Scenarios Profile Report",
+    "slug": "graduate-scenarios-profile-report",
+    "url": "https://www.shl.com/products/product-catalog/view/graduate-scenarios-profile-report/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "B"
+    ],
+    "test_types": [
+      "Biodata & Situational Judgement"
+    ],
+    "entity_id": "3901"
+  },
+  {
+    "name": "Hibernate (New)",
+    "slug": "hibernate-new",
+    "url": "https://www.shl.com/products/product-catalog/view/hibernate-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4074"
+  },
+  {
+    "name": "HIPAA (Security)",
+    "slug": "hipaa-security",
+    "url": "https://www.shl.com/products/product-catalog/view/hipaa-security/",
+    "remote_testing": true,
+    "adaptive_irt": true,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "331"
+  },
+  {
+    "name": "HiPo Assessment Report 1.0",
+    "slug": "hipo-assessment-report-1-0",
+    "url": "https://www.shl.com/products/product-catalog/view/hipo-assessment-report-1-0/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "C",
+      "P"
+    ],
+    "test_types": [
+      "Competencies",
+      "Personality & Behavior"
+    ],
+    "entity_id": "3845"
+  },
+  {
+    "name": "HiPo Assessment Report 2.0",
+    "slug": "hipo-assessment-report-2-0",
+    "url": "https://www.shl.com/products/product-catalog/view/hipo-assessment-report-2-0/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "C",
+      "P"
+    ],
+    "test_types": [
+      "Competencies",
+      "Personality & Behavior"
+    ],
+    "entity_id": "4284"
+  },
+  {
+    "name": "HiPo Unlocking Potential Report 2.0",
+    "slug": "hipo-unlocking-potential-report-2-0",
+    "url": "https://www.shl.com/products/product-catalog/view/hipo-unlocking-potential-report-2-0/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "C"
+    ],
+    "test_types": [
+      "Competencies"
+    ],
+    "entity_id": "4285"
+  },
+  {
+    "name": "Housekeeping (New)",
+    "slug": "housekeeping-new",
+    "url": "https://www.shl.com/products/product-catalog/view/housekeeping-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4076"
+  },
+  {
+    "name": "HTML/CSS (New)",
+    "slug": "htmlcss-new",
+    "url": "https://www.shl.com/products/product-catalog/view/htmlcss-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4080"
+  },
+  {
+    "name": "HTML5 (New)",
+    "slug": "html5-new",
+    "url": "https://www.shl.com/products/product-catalog/view/html5-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4081"
+  },
+  {
+    "name": "Human Resources (New)",
+    "slug": "human-resources-new",
+    "url": "https://www.shl.com/products/product-catalog/view/human-resources-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "3999"
+  },
+  {
+    "name": "IBM DataStage (New)",
+    "slug": "ibm-datastage-new",
+    "url": "https://www.shl.com/products/product-catalog/view/ibm-datastage-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4169"
+  },
+  {
+    "name": "IBM Sterling Order Management System (New)",
+    "slug": "ibm-sterling-order-management-system-new",
+    "url": "https://www.shl.com/products/product-catalog/view/ibm-sterling-order-management-system-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4155"
+  },
+  {
+    "name": "Industrial Engineering (New)",
+    "slug": "industrial-engineering-new",
+    "url": "https://www.shl.com/products/product-catalog/view/industrial-engineering-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4005"
+  },
+  {
+    "name": "Informatica (Architecture) (New)",
+    "slug": "informatica-architecture-new",
+    "url": "https://www.shl.com/products/product-catalog/view/informatica-architecture-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4054"
+  },
+  {
+    "name": "Informatica (Developer) (New)",
+    "slug": "informatica-developer-new",
+    "url": "https://www.shl.com/products/product-catalog/view/informatica-developer-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4055"
+  },
+  {
+    "name": "Instrumentation Engineering (New)",
+    "slug": "instrumentation-engineering-new",
+    "url": "https://www.shl.com/products/product-catalog/view/instrumentation-engineering-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4007"
+  },
+  {
+    "name": "Interpersonal Communications",
+    "slug": "interpersonal-communications",
+    "url": "https://www.shl.com/products/product-catalog/view/interpersonal-communications/",
+    "remote_testing": true,
+    "adaptive_irt": true,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "249"
+  },
+  {
+    "name": "Interviewing and Hiring Concepts (U.S.)",
+    "slug": "interviewing-and-hiring-concepts-u-s",
+    "url": "https://www.shl.com/products/product-catalog/view/interviewing-and-hiring-concepts-u-s/",
+    "remote_testing": true,
+    "adaptive_irt": true,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "333"
+  },
+  {
+    "name": "iOS Development (New)",
+    "slug": "ios-development-new",
+    "url": "https://www.shl.com/products/product-catalog/view/ios-development-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4102"
+  },
+  {
+    "name": "ITIL (IT Infrastructure Library) (New)",
+    "slug": "itil-it-infrastructure-library-new",
+    "url": "https://www.shl.com/products/product-catalog/view/itil-it-infrastructure-library-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4040"
+  },
+  {
+    "name": "Java 2 Platform Enterprise Edition 1.4 Fundamental",
+    "slug": "java-2-platform-enterprise-edition-1-4-fundamental",
+    "url": "https://www.shl.com/products/product-catalog/view/java-2-platform-enterprise-edition-1-4-fundamental/",
+    "remote_testing": true,
+    "adaptive_irt": true,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "88"
+  },
+  {
+    "name": "Java 8 (New)",
+    "slug": "java-8-new",
+    "url": "https://www.shl.com/products/product-catalog/view/java-8-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4084"
+  },
+  {
+    "name": "Java Design Patterns (New)",
+    "slug": "java-design-patterns-new",
+    "url": "https://www.shl.com/products/product-catalog/view/java-design-patterns-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4158"
+  },
+  {
+    "name": "Java Frameworks (New)",
+    "slug": "java-frameworks-new",
+    "url": "https://www.shl.com/products/product-catalog/view/java-frameworks-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4056"
+  },
+  {
+    "name": "Java Platform Enterprise Edition 7 (Java EE 7)",
+    "slug": "java-platform-enterprise-edition-7-java-ee-7",
+    "url": "https://www.shl.com/products/product-catalog/view/java-platform-enterprise-edition-7-java-ee-7/",
+    "remote_testing": true,
+    "adaptive_irt": true,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "3809"
+  },
+  {
+    "name": "Java Web Services (New)",
+    "slug": "java-web-services-new",
+    "url": "https://www.shl.com/products/product-catalog/view/java-web-services-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4033"
+  },
+  {
+    "name": "JavaScript (New)",
+    "slug": "javascript-new",
+    "url": "https://www.shl.com/products/product-catalog/view/javascript-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "3989"
+  },
+  {
+    "name": "Jenkins (New)",
+    "slug": "jenkins-new",
+    "url": "https://www.shl.com/products/product-catalog/view/jenkins-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4086"
+  },
+  {
+    "name": "Job Control Language (New)",
+    "slug": "job-control-language-new",
+    "url": "https://www.shl.com/products/product-catalog/view/job-control-language-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4085"
+  },
+  {
+    "name": "jQuery (New)",
+    "slug": "jquery-new",
+    "url": "https://www.shl.com/products/product-catalog/view/jquery-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4087"
+  },
+  {
+    "name": "Kubernetes (New)",
+    "slug": "kubernetes-new",
+    "url": "https://www.shl.com/products/product-catalog/view/kubernetes-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4152"
+  },
+  {
+    "name": "Linux Administration (New)",
+    "slug": "linux-administration-new",
+    "url": "https://www.shl.com/products/product-catalog/view/linux-administration-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "3990"
+  },
+  {
+    "name": "Linux Operating System",
+    "slug": "linux-operating-system",
+    "url": "https://www.shl.com/products/product-catalog/view/linux-operating-system/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4299"
+  },
+  {
+    "name": "Linux Programming (General)",
+    "slug": "linux-programming-general",
+    "url": "https://www.shl.com/products/product-catalog/view/linux-programming-general/",
+    "remote_testing": true,
+    "adaptive_irt": true,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "205"
+  },
+  {
+    "name": "Load Runner (New)",
+    "slug": "load-runner-new",
+    "url": "https://www.shl.com/products/product-catalog/view/load-runner-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4170"
+  },
+  {
+    "name": "Management Scenarios",
+    "slug": "management-scenarios",
+    "url": "https://www.shl.com/products/product-catalog/view/management-scenarios/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "B"
+    ],
+    "test_types": [
+      "Biodata & Situational Judgement"
+    ],
+    "entity_id": "742"
+  },
+  {
+    "name": "Managerial Scenarios Candidate Report",
+    "slug": "managerial-scenarios-candidate-report",
+    "url": "https://www.shl.com/products/product-catalog/view/managerial-scenarios-candidate-report/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "B"
+    ],
+    "test_types": [
+      "Biodata & Situational Judgement"
+    ],
+    "entity_id": "3903"
+  },
+  {
+    "name": "Managerial Scenarios Narrative Report",
+    "slug": "managerial-scenarios-narrative-report",
+    "url": "https://www.shl.com/products/product-catalog/view/managerial-scenarios-narrative-report/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "B"
+    ],
+    "test_types": [
+      "Biodata & Situational Judgement"
+    ],
+    "entity_id": "3902"
+  },
+  {
+    "name": "Managerial Scenarios Profile Report",
+    "slug": "managerial-scenarios-profile-report",
+    "url": "https://www.shl.com/products/product-catalog/view/managerial-scenarios-profile-report/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "B"
+    ],
+    "test_types": [
+      "Biodata & Situational Judgement"
+    ],
+    "entity_id": "3904"
+  },
+  {
+    "name": "Manual Testing (New)",
+    "slug": "manual-testing-new",
+    "url": "https://www.shl.com/products/product-catalog/view/manual-testing-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4157"
+  },
+  {
+    "name": "Manufac. & Indust. - Mechanical & Vigilance 8.0",
+    "slug": "mechanical-and-vigilance-focus-8-0",
+    "url": "https://www.shl.com/products/product-catalog/view/mechanical-and-vigilance-focus-8-0/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "A",
+      "P"
+    ],
+    "test_types": [
+      "Ability & Aptitude",
+      "Personality & Behavior"
+    ],
+    "entity_id": "4291"
+  },
+  {
+    "name": "Manufac. & Indust. - Safety & Dependability 8.0",
+    "slug": "safety-and-dependability-focus-8-0",
+    "url": "https://www.shl.com/products/product-catalog/view/safety-and-dependability-focus-8-0/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "P"
+    ],
+    "test_types": [
+      "Personality & Behavior"
+    ],
+    "entity_id": "4293"
+  },
+  {
+    "name": "Manufacturing & Industrial - Essential Focus 8.0",
+    "slug": "essential-focus-8-0",
+    "url": "https://www.shl.com/products/product-catalog/view/essential-focus-8-0/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "P"
+    ],
+    "test_types": [
+      "Personality & Behavior"
+    ],
+    "entity_id": "4295"
+  },
+  {
+    "name": "Manufacturing & Industrial - Mechanical Focus 8.0",
+    "slug": "mechanical-focus-8-0",
+    "url": "https://www.shl.com/products/product-catalog/view/mechanical-focus-8-0/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "A",
+      "P"
+    ],
+    "test_types": [
+      "Ability & Aptitude",
+      "Personality & Behavior"
+    ],
+    "entity_id": "4292"
+  },
+  {
+    "name": "Manufacturing & Industrial - Vigilance Focus 8.0",
+    "slug": "vigilance-focus-8-0",
+    "url": "https://www.shl.com/products/product-catalog/view/vigilance-focus-8-0/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "A",
+      "P"
+    ],
+    "test_types": [
+      "Ability & Aptitude",
+      "Personality & Behavior"
+    ],
+    "entity_id": "4294"
+  },
+  {
+    "name": "Marketing (New)",
+    "slug": "marketing-new",
+    "url": "https://www.shl.com/products/product-catalog/view/marketing-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4008"
+  },
+  {
+    "name": "Maven (New)",
+    "slug": "maven-new",
+    "url": "https://www.shl.com/products/product-catalog/view/maven-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4089"
+  },
+  {
+    "name": "Mechanical Engineering (New)",
+    "slug": "mechanical-engineering-new",
+    "url": "https://www.shl.com/products/product-catalog/view/mechanical-engineering-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4006"
+  },
+  {
+    "name": "Mechatronics Engineering (New)",
+    "slug": "mechatronics-engineering-new",
+    "url": "https://www.shl.com/products/product-catalog/view/mechatronics-engineering-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4176"
+  },
+  {
+    "name": "Medical Terminology (New)",
+    "slug": "medical-terminology-new",
+    "url": "https://www.shl.com/products/product-catalog/view/medical-terminology-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4058"
+  },
+  {
+    "name": "Metallurgical Engineering (New)",
+    "slug": "metallurgical-engineering-new",
+    "url": "https://www.shl.com/products/product-catalog/view/metallurgical-engineering-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4119"
+  },
+  {
+    "name": "MFS 360 Enterprise Leadership Report",
+    "slug": "mfs-360-enterprise-leadership-report",
+    "url": "https://www.shl.com/products/product-catalog/view/mfs-360-enterprise-leadership-report/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "D"
+    ],
+    "test_types": [
+      "Development & 360"
+    ],
+    "entity_id": "3951"
+  },
+  {
+    "name": "MFS 360 UCF Group Report",
+    "slug": "mfs-360-ucf-group-report",
+    "url": "https://www.shl.com/products/product-catalog/view/mfs-360-ucf-group-report/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "D"
+    ],
+    "test_types": [
+      "Development & 360"
+    ],
+    "entity_id": "3950"
+  },
+  {
+    "name": "MFS 360 UCF Performance Potential Dev Tips Report",
+    "slug": "mfs-360-ucf-performance-potential-dev-tips-report",
+    "url": "https://www.shl.com/products/product-catalog/view/mfs-360-ucf-performance-potential-dev-tips-report/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "D"
+    ],
+    "test_types": [
+      "Development & 360"
+    ],
+    "entity_id": "3949"
+  },
+  {
+    "name": "MFS 360 UCF Standard Report",
+    "slug": "mfs-360-ucf-standard-report",
+    "url": "https://www.shl.com/products/product-catalog/view/mfs-360-ucf-standard-report/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "D"
+    ],
+    "test_types": [
+      "Development & 360"
+    ],
+    "entity_id": "3948"
+  },
+  {
+    "name": "Micro Focus Unified Functional Testing (New)",
+    "slug": "micro-focus-unified-functional-testing-new",
+    "url": "https://www.shl.com/products/product-catalog/view/micro-focus-unified-functional-testing-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4027"
+  },
+  {
+    "name": "Microservices (New)",
+    "slug": "microservices-new",
+    "url": "https://www.shl.com/products/product-catalog/view/microservices-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4091"
+  },
+  {
+    "name": "Microsoft Dynamics Development (New)",
+    "slug": "microsoft-dynamics-development-new",
+    "url": "https://www.shl.com/products/product-catalog/view/microsoft-dynamics-development-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4092"
+  },
+  {
+    "name": "Microsoft Excel 365 - Essentials (New)",
+    "slug": "microsoft-excel-365-essentials-new",
+    "url": "https://www.shl.com/products/product-catalog/view/microsoft-excel-365-essentials-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K",
+      "S"
+    ],
+    "test_types": [
+      "Knowledge & Skills",
+      "Simulations"
+    ],
+    "entity_id": "4208"
+  },
+  {
+    "name": "Microsoft Excel 365 (New)",
+    "slug": "microsoft-excel-365-new",
+    "url": "https://www.shl.com/products/product-catalog/view/microsoft-excel-365-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K",
+      "S"
+    ],
+    "test_types": [
+      "Knowledge & Skills",
+      "Simulations"
+    ],
+    "entity_id": "4207"
+  },
+  {
+    "name": "Microsoft Outlook 2013 (adaptive)",
+    "slug": "microsoft-outlook-2013-adaptive",
+    "url": "https://www.shl.com/products/product-catalog/view/microsoft-outlook-2013-adaptive/",
+    "remote_testing": true,
+    "adaptive_irt": true,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "3785"
+  },
+  {
+    "name": "Microsoft PowerPoint 365 - Essentials (New)",
+    "slug": "microsoft-powerpoint-365-essentials-new",
+    "url": "https://www.shl.com/products/product-catalog/view/microsoft-powerpoint-365-essentials-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K",
+      "S"
+    ],
+    "test_types": [
+      "Knowledge & Skills",
+      "Simulations"
+    ],
+    "entity_id": "4212"
+  },
+  {
+    "name": "Microsoft SQL Server 2014 Programming",
+    "slug": "microsoft-sql-server-2014-programming",
+    "url": "https://www.shl.com/products/product-catalog/view/microsoft-sql-server-2014-programming/",
+    "remote_testing": true,
+    "adaptive_irt": true,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "3789"
+  },
+  {
+    "name": "Microsoft Windows Server 2012 Administration",
+    "slug": "microsoft-windows-server-2012-administration",
+    "url": "https://www.shl.com/products/product-catalog/view/microsoft-windows-server-2012-administration/",
+    "remote_testing": true,
+    "adaptive_irt": true,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "3807"
+  },
+  {
+    "name": "Microsoft Word 365 - Essentials (New)",
+    "slug": "microsoft-word-365-essentials-new",
+    "url": "https://www.shl.com/products/product-catalog/view/microsoft-word-365-essentials-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K",
+      "S"
+    ],
+    "test_types": [
+      "Knowledge & Skills",
+      "Simulations"
+    ],
+    "entity_id": "4211"
+  },
+  {
+    "name": "Microsoft Word 365 (New)",
+    "slug": "microsoft-word-365-new",
+    "url": "https://www.shl.com/products/product-catalog/view/microsoft-word-365-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "S",
+      "K"
+    ],
+    "test_types": [
+      "Simulations",
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4210"
+  },
+  {
+    "name": "Mineral Engineering (New)",
+    "slug": "mineral-engineering-new",
+    "url": "https://www.shl.com/products/product-catalog/view/mineral-engineering-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4047"
+  },
+  {
+    "name": "Mining Engineering (New)",
+    "slug": "mining-engineering-new",
+    "url": "https://www.shl.com/products/product-catalog/view/mining-engineering-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4093"
+  },
+  {
+    "name": "Mobility (New)",
+    "slug": "mobility-new",
+    "url": "https://www.shl.com/products/product-catalog/view/mobility-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4174"
+  },
+  {
+    "name": "Molecular Biology (New)",
+    "slug": "molecular-biology-new",
+    "url": "https://www.shl.com/products/product-catalog/view/molecular-biology-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4096"
+  },
+  {
+    "name": "MongoDB (New)",
+    "slug": "mongodb-new",
+    "url": "https://www.shl.com/products/product-catalog/view/mongodb-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4010"
+  },
+  {
+    "name": "Motivation Questionnaire MQM5",
+    "slug": "motivation-questionnaire-mqm5",
+    "url": "https://www.shl.com/products/product-catalog/view/motivation-questionnaire-mqm5/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "P"
+    ],
+    "test_types": [
+      "Personality & Behavior"
+    ],
+    "entity_id": "724"
+  },
+  {
+    "name": "MQ Candidate Motivation Report",
+    "slug": "mq-candidate-motivation-report",
+    "url": "https://www.shl.com/products/product-catalog/view/mq-candidate-motivation-report/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "P"
+    ],
+    "test_types": [
+      "Personality & Behavior"
+    ],
+    "entity_id": "1308"
+  },
+  {
+    "name": "MQ Employee Motivation Report",
+    "slug": "mq-employee-motivation-report",
+    "url": "https://www.shl.com/products/product-catalog/view/mq-employee-motivation-report/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "P"
+    ],
+    "test_types": [
+      "Personality & Behavior"
+    ],
+    "entity_id": "1306"
+  },
+  {
+    "name": "MQ Motivation Report Pack",
+    "slug": "mq-motivation-report-pack",
+    "url": "https://www.shl.com/products/product-catalog/view/mq-motivation-report-pack/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "P"
+    ],
+    "test_types": [
+      "Personality & Behavior"
+    ],
+    "entity_id": "1309"
+  },
+  {
+    "name": "MQ Profile",
+    "slug": "mq-profile",
+    "url": "https://www.shl.com/products/product-catalog/view/mq-profile/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "P"
+    ],
+    "test_types": [
+      "Personality & Behavior"
+    ],
+    "entity_id": "1048"
+  },
+  {
+    "name": "MS Access (New)",
+    "slug": "ms-access-new",
+    "url": "https://www.shl.com/products/product-catalog/view/ms-access-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4015"
+  },
+  {
+    "name": "MS Excel (New)",
+    "slug": "ms-excel-new",
+    "url": "https://www.shl.com/products/product-catalog/view/ms-excel-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "3993"
+  },
+  {
+    "name": "MS Office Basic Computer Literacy (New)",
+    "slug": "ms-office-basic-computer-literacy-new",
+    "url": "https://www.shl.com/products/product-catalog/view/ms-office-basic-computer-literacy-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "3995"
+  },
+  {
+    "name": "MS Office Basic Computer Literacy (Sim) (New)",
+    "slug": "ms-office-basic-computer-literacy-sim-new",
+    "url": "https://www.shl.com/products/product-catalog/view/ms-office-basic-computer-literacy-sim-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "S"
+    ],
+    "test_types": [
+      "Simulations"
+    ],
+    "entity_id": "4193"
+  },
+  {
+    "name": "MS PowerPoint (New)",
+    "slug": "ms-powerpoint-new",
+    "url": "https://www.shl.com/products/product-catalog/view/ms-powerpoint-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4097"
+  },
+  {
+    "name": "MS Word (New)",
+    "slug": "ms-word-new",
+    "url": "https://www.shl.com/products/product-catalog/view/ms-word-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "3994"
+  },
+  {
+    "name": "MuleSoft Development (New)",
+    "slug": "mulesoft-development-new",
+    "url": "https://www.shl.com/products/product-catalog/view/mulesoft-development-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4098"
+  },
+  {
+    "name": "Multitasking Ability",
+    "slug": "multitasking-ability",
+    "url": "https://www.shl.com/products/product-catalog/view/multitasking-ability/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "A",
+      "K",
+      "S"
+    ],
+    "test_types": [
+      "Ability & Aptitude",
+      "Knowledge & Skills",
+      "Simulations"
+    ],
+    "entity_id": "615"
+  },
+  {
+    "name": "Networking and Implementation (New)",
+    "slug": "networking-and-implementation-new",
+    "url": "https://www.shl.com/products/product-catalog/view/networking-and-implementation-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4100"
+  },
+  {
+    "name": "Node.js (New)",
+    "slug": "node-js-new",
+    "url": "https://www.shl.com/products/product-catalog/view/node-js-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "3997"
+  },
+  {
+    "name": "Nursing (New)",
+    "slug": "nursing-new",
+    "url": "https://www.shl.com/products/product-catalog/view/nursing-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4041"
+  },
+  {
+    "name": "Occupational Personality Questionnaire OPQ32r",
+    "slug": "occupational-personality-questionnaire-opq32r",
+    "url": "https://www.shl.com/products/product-catalog/view/occupational-personality-questionnaire-opq32r/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "P"
+    ],
+    "test_types": [
+      "Personality & Behavior"
+    ],
+    "entity_id": "720"
+  },
+  {
+    "name": "Operations Management (New)",
+    "slug": "operations-management-new",
+    "url": "https://www.shl.com/products/product-catalog/view/operations-management-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4116"
+  },
+  {
+    "name": "OPQ Candidate Plus Report",
+    "slug": "opq-candidate-plus-report",
+    "url": "https://www.shl.com/products/product-catalog/view/opq-candidate-plus-report/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "P"
+    ],
+    "test_types": [
+      "Personality & Behavior"
+    ],
+    "entity_id": "727"
+  },
+  {
+    "name": "OPQ Candidate Report 2.0",
+    "slug": "opq-candidate-report-2-0",
+    "url": "https://www.shl.com/products/product-catalog/view/opq-candidate-report-2-0/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "P"
+    ],
+    "test_types": [
+      "Personality & Behavior"
+    ],
+    "entity_id": "4298"
+  },
+  {
+    "name": "OPQ Emotional Intelligence Report",
+    "slug": "opq-emotional-intelligence-report",
+    "url": "https://www.shl.com/products/product-catalog/view/opq-emotional-intelligence-report/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "P"
+    ],
+    "test_types": [
+      "Personality & Behavior"
+    ],
+    "entity_id": "748"
+  },
+  {
+    "name": "OPQ Leadership Report",
+    "slug": "opq-leadership-report",
+    "url": "https://www.shl.com/products/product-catalog/view/opq-leadership-report/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "P"
+    ],
+    "test_types": [
+      "Personality & Behavior"
+    ],
+    "entity_id": "749"
+  },
+  {
+    "name": "OPQ Manager Plus Report",
+    "slug": "opq-manager-plus-report",
+    "url": "https://www.shl.com/products/product-catalog/view/opq-manager-plus-report/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "P"
+    ],
+    "test_types": [
+      "Personality & Behavior"
+    ],
+    "entity_id": "750"
+  },
+  {
+    "name": "OPQ Manager Plus Report 2.0",
+    "slug": "opq-manager-plus-report-2-0",
+    "url": "https://www.shl.com/products/product-catalog/view/opq-manager-plus-report-2-0/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "P"
+    ],
+    "test_types": [
+      "Personality & Behavior"
+    ],
+    "entity_id": "4300"
+  },
+  {
+    "name": "OPQ Maximising your Learning Report",
+    "slug": "opq-maximising-your-learning-report",
+    "url": "https://www.shl.com/products/product-catalog/view/opq-maximising-your-learning-report/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "P"
+    ],
+    "test_types": [
+      "Personality & Behavior"
+    ],
+    "entity_id": "752"
+  },
+  {
+    "name": "OPQ MQ Sales Report",
+    "slug": "opq-mq-sales-report",
+    "url": "https://www.shl.com/products/product-catalog/view/opq-mq-sales-report/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "P"
+    ],
+    "test_types": [
+      "Personality & Behavior"
+    ],
+    "entity_id": "754"
+  },
+  {
+    "name": "OPQ Premium Plus Report",
+    "slug": "opq-premium-plus-report",
+    "url": "https://www.shl.com/products/product-catalog/view/opq-premium-plus-report/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "P"
+    ],
+    "test_types": [
+      "Personality & Behavior"
+    ],
+    "entity_id": "753"
+  },
+  {
+    "name": "OPQ Premium Plus Report 2.0",
+    "slug": "opq-premium-plus-report-2-0",
+    "url": "https://www.shl.com/products/product-catalog/view/opq-premium-plus-report-2-0/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "P"
+    ],
+    "test_types": [
+      "Personality & Behavior"
+    ],
+    "entity_id": "4307"
+  },
+  {
+    "name": "OPQ Profile Report",
+    "slug": "opq-profile-report",
+    "url": "https://www.shl.com/products/product-catalog/view/opq-profile-report/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "P"
+    ],
+    "test_types": [
+      "Personality & Behavior"
+    ],
+    "entity_id": "1050"
+  },
+  {
+    "name": "OPQ Team Impact Group Development Report",
+    "slug": "opq-team-impact-group-development-report",
+    "url": "https://www.shl.com/products/product-catalog/view/opq-team-impact-group-development-report/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "P"
+    ],
+    "test_types": [
+      "Personality & Behavior"
+    ],
+    "entity_id": "1060"
+  },
+  {
+    "name": "OPQ Team Impact Individual Development Report",
+    "slug": "opq-team-impact-individual-development-report",
+    "url": "https://www.shl.com/products/product-catalog/view/opq-team-impact-individual-development-report/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "P"
+    ],
+    "test_types": [
+      "Personality & Behavior"
+    ],
+    "entity_id": "1059"
+  },
+  {
+    "name": "OPQ Team Impact Selection Report",
+    "slug": "opq-team-impact-selection-report",
+    "url": "https://www.shl.com/products/product-catalog/view/opq-team-impact-selection-report/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "P"
+    ],
+    "test_types": [
+      "Personality & Behavior"
+    ],
+    "entity_id": "1058"
+  },
+  {
+    "name": "OPQ Team Types & Leadership Styles Profile",
+    "slug": "opq-team-types-and-leadership-styles-profile",
+    "url": "https://www.shl.com/products/product-catalog/view/opq-team-types-and-leadership-styles-profile/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "P"
+    ],
+    "test_types": [
+      "Personality & Behavior"
+    ],
+    "entity_id": "1061"
+  },
+  {
+    "name": "OPQ Team Types and Leadership Styles Report",
+    "slug": "opq-team-types-and-leadership-styles-report",
+    "url": "https://www.shl.com/products/product-catalog/view/opq-team-types-and-leadership-styles-report/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "P"
+    ],
+    "test_types": [
+      "Personality & Behavior"
+    ],
+    "entity_id": "756"
+  },
+  {
+    "name": "OPQ UCF Development Action Planner Report 1.0",
+    "slug": "opq-ucf-development-action-planner-report",
+    "url": "https://www.shl.com/products/product-catalog/view/opq-ucf-development-action-planner-report/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "P"
+    ],
+    "test_types": [
+      "Personality & Behavior"
+    ],
+    "entity_id": "757"
+  },
+  {
+    "name": "OPQ UCF Development Action Planner Report 2.0",
+    "slug": "opq-ucf-development-action-planner-report-2-0",
+    "url": "https://www.shl.com/products/product-catalog/view/opq-ucf-development-action-planner-report-2-0/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "P"
+    ],
+    "test_types": [
+      "Personality & Behavior"
+    ],
+    "entity_id": "4286"
+  },
+  {
+    "name": "OPQ Universal Competency Report 1.0",
+    "slug": "opq-universal-competency-report",
+    "url": "https://www.shl.com/products/product-catalog/view/opq-universal-competency-report/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "P"
+    ],
+    "test_types": [
+      "Personality & Behavior"
+    ],
+    "entity_id": "758"
+  },
+  {
+    "name": "OPQ Universal Competency Report 2.0",
+    "slug": "opq-universal-competency-report-2-0",
+    "url": "https://www.shl.com/products/product-catalog/view/opq-universal-competency-report-2-0/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "P"
+    ],
+    "test_types": [
+      "Personality & Behavior"
+    ],
+    "entity_id": "4289"
+  },
+  {
+    "name": "OPQ User and Managers Report",
+    "slug": "opq-user-and-managers-report",
+    "url": "https://www.shl.com/products/product-catalog/view/opq-user-and-managers-report/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "P"
+    ],
+    "test_types": [
+      "Personality & Behavior"
+    ],
+    "entity_id": "1067"
+  },
+  {
+    "name": "OPQ User Report",
+    "slug": "opq-user-report",
+    "url": "https://www.shl.com/products/product-catalog/view/opq-user-report/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "P",
+      "S"
+    ],
+    "test_types": [
+      "Personality & Behavior",
+      "Simulations"
+    ],
+    "entity_id": "759"
+  },
+  {
+    "name": "Oracle DBA (Advanced Level) (New)",
+    "slug": "oracle-dba-advanced-level-new",
+    "url": "https://www.shl.com/products/product-catalog/view/oracle-dba-advanced-level-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4106"
+  },
+  {
+    "name": "Oracle DBA (Entry Level) (New)",
+    "slug": "oracle-dba-entry-level-new",
+    "url": "https://www.shl.com/products/product-catalog/view/oracle-dba-entry-level-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4105"
+  },
+  {
+    "name": "Oracle PL/SQL (New)",
+    "slug": "oracle-plsql-new",
+    "url": "https://www.shl.com/products/product-catalog/view/oracle-plsql-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4145"
+  },
+  {
+    "name": "Oracle WebLogic Server (New)",
+    "slug": "oracle-weblogic-server-new",
+    "url": "https://www.shl.com/products/product-catalog/view/oracle-weblogic-server-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4156"
+  },
+  {
+    "name": "Organic Chemistry (New)",
+    "slug": "organic-chemistry-new",
+    "url": "https://www.shl.com/products/product-catalog/view/organic-chemistry-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4154"
+  },
+  {
+    "name": "Paint Technology (New)",
+    "slug": "paint-technology-new",
+    "url": "https://www.shl.com/products/product-catalog/view/paint-technology-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4107"
+  },
+  {
+    "name": "Pediatrics (New)",
+    "slug": "pediatrics-new",
+    "url": "https://www.shl.com/products/product-catalog/view/pediatrics-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "3998"
+  },
+  {
+    "name": "Pega Development (New)",
+    "slug": "pega-development-new",
+    "url": "https://www.shl.com/products/product-catalog/view/pega-development-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4108"
+  },
+  {
+    "name": "Perl (New)",
+    "slug": "perl-new",
+    "url": "https://www.shl.com/products/product-catalog/view/perl-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4109"
+  },
+  {
+    "name": "Petrochemical Engineering (New)",
+    "slug": "petrochemical-engineering-new",
+    "url": "https://www.shl.com/products/product-catalog/view/petrochemical-engineering-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4070"
+  },
+  {
+    "name": "Petroleum Engineering (New)",
+    "slug": "petroleum-engineering-new",
+    "url": "https://www.shl.com/products/product-catalog/view/petroleum-engineering-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4110"
+  },
+  {
+    "name": "Pharmaceutical Analysis (New)",
+    "slug": "pharmaceutical-analysis-new",
+    "url": "https://www.shl.com/products/product-catalog/view/pharmaceutical-analysis-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4088"
+  },
+  {
+    "name": "Pharmaceutical Chemistry (New)",
+    "slug": "pharmaceutical-chemistry-new",
+    "url": "https://www.shl.com/products/product-catalog/view/pharmaceutical-chemistry-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4114"
+  },
+  {
+    "name": "Pharmaceutical Science (New)",
+    "slug": "pharmaceutical-science-new",
+    "url": "https://www.shl.com/products/product-catalog/view/pharmaceutical-science-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4061"
+  },
+  {
+    "name": "Pharmaceutics (New)",
+    "slug": "pharmaceutics-new",
+    "url": "https://www.shl.com/products/product-catalog/view/pharmaceutics-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4111"
+  },
+  {
+    "name": "Pharmacology (New)",
+    "slug": "pharmacology-new",
+    "url": "https://www.shl.com/products/product-catalog/view/pharmacology-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4112"
+  },
+  {
+    "name": "PHP (New)",
+    "slug": "php-new",
+    "url": "https://www.shl.com/products/product-catalog/view/php-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4103"
+  },
+  {
+    "name": "PJM Development Report",
+    "slug": "pjm-development-report",
+    "url": "https://www.shl.com/products/product-catalog/view/pjm-development-report/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "C",
+      "A",
+      "P"
+    ],
+    "test_types": [
+      "Competencies",
+      "Ability & Aptitude",
+      "Personality & Behavior"
+    ],
+    "entity_id": "3746"
+  },
+  {
+    "name": "PJM Selection Report",
+    "slug": "pjm-selection-report",
+    "url": "https://www.shl.com/products/product-catalog/view/pjm-selection-report/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "A",
+      "C",
+      "P"
+    ],
+    "test_types": [
+      "Ability & Aptitude",
+      "Competencies",
+      "Personality & Behavior"
+    ],
+    "entity_id": "3484"
+  },
+  {
+    "name": "Polymer Engineering (New)",
+    "slug": "polymer-engineering-new",
+    "url": "https://www.shl.com/products/product-catalog/view/polymer-engineering-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4042"
+  },
+  {
+    "name": "Power Electronics and Drives (New)",
+    "slug": "power-electronics-and-drives-new",
+    "url": "https://www.shl.com/products/product-catalog/view/power-electronics-and-drives-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4118"
+  },
+  {
+    "name": "Power System Engineering (New)",
+    "slug": "power-system-engineering-new",
+    "url": "https://www.shl.com/products/product-catalog/view/power-system-engineering-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4117"
+  },
+  {
+    "name": "Prism (New)",
+    "slug": "prism-new",
+    "url": "https://www.shl.com/products/product-catalog/view/prism-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4095"
+  },
+  {
+    "name": "Production and Industrial Engineering (New)",
+    "slug": "production-and-industrial-engineering-new",
+    "url": "https://www.shl.com/products/product-catalog/view/production-and-industrial-engineering-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4121"
+  },
+  {
+    "name": "Production Engineering (New)",
+    "slug": "production-engineering-new",
+    "url": "https://www.shl.com/products/product-catalog/view/production-engineering-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4120"
+  },
+  {
+    "name": "Programming Concepts",
+    "slug": "programming-concepts",
+    "url": "https://www.shl.com/products/product-catalog/view/programming-concepts/",
+    "remote_testing": true,
+    "adaptive_irt": true,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "219"
+  },
+  {
+    "name": "Project Management (2013)",
+    "slug": "project-management-2013",
+    "url": "https://www.shl.com/products/product-catalog/view/project-management-2013/",
+    "remote_testing": true,
+    "adaptive_irt": true,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "3769"
+  },
+  {
+    "name": "Proofreading v1",
+    "slug": "proofreading-v1",
+    "url": "https://www.shl.com/products/product-catalog/view/proofreading-v1/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "393"
+  },
+  {
+    "name": "Python (New)",
+    "slug": "python-new",
+    "url": "https://www.shl.com/products/product-catalog/view/python-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4123"
+  },
+  {
+    "name": "R Programming (New)",
+    "slug": "r-programming-new",
+    "url": "https://www.shl.com/products/product-catalog/view/r-programming-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4124"
+  },
+  {
+    "name": "ReactJS (New)",
+    "slug": "reactjs-new",
+    "url": "https://www.shl.com/products/product-catalog/view/reactjs-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4177"
+  },
+  {
+    "name": "Reading Comprehension - English v1",
+    "slug": "reading-comprehension-english-v1",
+    "url": "https://www.shl.com/products/product-catalog/view/reading-comprehension-english-v1/",
+    "remote_testing": true,
+    "adaptive_irt": true,
+    "test_type_keys": [
+      "A"
+    ],
+    "test_types": [
+      "Ability & Aptitude"
+    ],
+    "entity_id": "3472"
+  },
+  {
+    "name": "Reading Comprehension - Spanish v1",
+    "slug": "reading-comprehension-spanish-v1",
+    "url": "https://www.shl.com/products/product-catalog/view/reading-comprehension-spanish-v1/",
+    "remote_testing": true,
+    "adaptive_irt": true,
+    "test_type_keys": [
+      "A"
+    ],
+    "test_types": [
+      "Ability & Aptitude"
+    ],
+    "entity_id": "543"
+  },
+  {
+    "name": "Reading Comprehension v2",
+    "slug": "reading-comprehension-v2",
+    "url": "https://www.shl.com/products/product-catalog/view/reading-comprehension-v2/",
+    "remote_testing": true,
+    "adaptive_irt": true,
+    "test_type_keys": [
+      "A"
+    ],
+    "test_types": [
+      "Ability & Aptitude"
+    ],
+    "entity_id": "3942"
+  },
+  {
+    "name": "RemoteWorkQ",
+    "slug": "remoteworkq",
+    "url": "https://www.shl.com/products/product-catalog/view/remoteworkq/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "C"
+    ],
+    "test_types": [
+      "Competencies"
+    ],
+    "entity_id": "4204"
+  },
+  {
+    "name": "RemoteWorkQ Manager Report",
+    "slug": "remoteworkq-manager-report",
+    "url": "https://www.shl.com/products/product-catalog/view/remoteworkq-manager-report/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "C"
+    ],
+    "test_types": [
+      "Competencies"
+    ],
+    "entity_id": "4202"
+  },
+  {
+    "name": "RemoteWorkQ Participant Report",
+    "slug": "remoteworkq-participant-report",
+    "url": "https://www.shl.com/products/product-catalog/view/remoteworkq-participant-report/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "C"
+    ],
+    "test_types": [
+      "Competencies"
+    ],
+    "entity_id": "4203"
+  },
+  {
+    "name": "RESTful Web Services (New)",
+    "slug": "restful-web-services-new",
+    "url": "https://www.shl.com/products/product-catalog/view/restful-web-services-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4126"
+  },
+  {
+    "name": "Retail Sales and Service Simulation",
+    "slug": "retail-sales-and-service-simulation",
+    "url": "https://www.shl.com/products/product-catalog/view/retail-sales-and-service-simulation/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "B",
+      "K",
+      "S",
+      "A"
+    ],
+    "test_types": [
+      "Biodata & Situational Judgement",
+      "Knowledge & Skills",
+      "Simulations",
+      "Ability & Aptitude"
+    ],
+    "entity_id": "697"
+  },
+  {
+    "name": "Reviewing Forms - US (R1)",
+    "slug": "reviewing-forms-us-r1",
+    "url": "https://www.shl.com/products/product-catalog/view/reviewing-forms-us-r1/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "395"
+  },
+  {
+    "name": "Ruby (New)",
+    "slug": "ruby-new",
+    "url": "https://www.shl.com/products/product-catalog/view/ruby-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4129"
+  },
+  {
+    "name": "Ruby on Rails (New)",
+    "slug": "ruby-on-rails-new",
+    "url": "https://www.shl.com/products/product-catalog/view/ruby-on-rails-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4128"
+  },
+  {
+    "name": "Sales & Service Phone Simulation",
+    "slug": "sales-and-service-phone-simulation",
+    "url": "https://www.shl.com/products/product-catalog/view/sales-and-service-phone-simulation/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "S",
+      "B"
+    ],
+    "test_types": [
+      "Simulations",
+      "Biodata & Situational Judgement"
+    ],
+    "entity_id": "3932"
+  },
+  {
+    "name": "Sales & Service Phone Solution",
+    "slug": "sales-and-service-phone-solution",
+    "url": "https://www.shl.com/products/product-catalog/view/sales-and-service-phone-solution/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "B",
+      "P",
+      "S"
+    ],
+    "test_types": [
+      "Biodata & Situational Judgement",
+      "Personality & Behavior",
+      "Simulations"
+    ],
+    "entity_id": "3930"
+  },
+  {
+    "name": "Sales Interview Guide",
+    "slug": "sales-interview-guide",
+    "url": "https://www.shl.com/products/product-catalog/view/sales-interview-guide/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "P",
+      "P"
+    ],
+    "test_types": [
+      "Personality & Behavior",
+      "Personality & Behavior"
+    ],
+    "entity_id": "726"
+  },
+  {
+    "name": "Sales Profiler Cards",
+    "slug": "sales-profiler-cards",
+    "url": "https://www.shl.com/products/product-catalog/view/sales-profiler-cards/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "P"
+    ],
+    "test_types": [
+      "Personality & Behavior"
+    ],
+    "entity_id": "725"
+  },
+  {
+    "name": "Sales Transformation 1.0 - Individual Contributor",
+    "slug": "sales-transformation-report-individual-contributor",
+    "url": "https://www.shl.com/products/product-catalog/view/sales-transformation-report-individual-contributor/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "P"
+    ],
+    "test_types": [
+      "Personality & Behavior"
+    ],
+    "entity_id": "4230"
+  },
+  {
+    "name": "Sales Transformation 2.0 - Individual Contributor",
+    "slug": "salestransformationreport2-0-individualcontributor",
+    "url": "https://www.shl.com/products/product-catalog/view/salestransformationreport2-0-individualcontributor/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "P"
+    ],
+    "test_types": [
+      "Personality & Behavior"
+    ],
+    "entity_id": "4283"
+  },
+  {
+    "name": "Sales Transformation Report 1.0 - Sales Manager",
+    "slug": "sales-transformation-report-sales-manager",
+    "url": "https://www.shl.com/products/product-catalog/view/sales-transformation-report-sales-manager/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "P"
+    ],
+    "test_types": [
+      "Personality & Behavior"
+    ],
+    "entity_id": "4233"
+  },
+  {
+    "name": "Sales Transformation Report 2.0 - Sales Manager",
+    "slug": "sales-transformation-report-2-0-sales-manager",
+    "url": "https://www.shl.com/products/product-catalog/view/sales-transformation-report-2-0-sales-manager/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "P"
+    ],
+    "test_types": [
+      "Personality & Behavior"
+    ],
+    "entity_id": "4288"
+  },
+  {
+    "name": "Salesforce Development (New)",
+    "slug": "salesforce-development-new",
+    "url": "https://www.shl.com/products/product-catalog/view/salesforce-development-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4130"
+  },
+  {
+    "name": "SAP ABAP (Advanced Level) (New)",
+    "slug": "sap-abap-advanced-level-new",
+    "url": "https://www.shl.com/products/product-catalog/view/sap-abap-advanced-level-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4131"
+  },
+  {
+    "name": "SAP ABAP (Intermediate Level) (New)",
+    "slug": "sap-abap-intermediate-level-new",
+    "url": "https://www.shl.com/products/product-catalog/view/sap-abap-intermediate-level-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4132"
+  },
+  {
+    "name": "SAP Basis (New)",
+    "slug": "sap-basis-new",
+    "url": "https://www.shl.com/products/product-catalog/view/sap-basis-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4133"
+  },
+  {
+    "name": "SAP Business Objects WebI (New)",
+    "slug": "sap-business-objects-webi-new",
+    "url": "https://www.shl.com/products/product-catalog/view/sap-business-objects-webi-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4136"
+  },
+  {
+    "name": "SAP BW (Business Warehouse) (New)",
+    "slug": "sap-bw-business-warehouse-new",
+    "url": "https://www.shl.com/products/product-catalog/view/sap-bw-business-warehouse-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4134"
+  },
+  {
+    "name": "SAP HCM (Human Capital Management) (New)",
+    "slug": "sap-hcm-human-capital-management-new",
+    "url": "https://www.shl.com/products/product-catalog/view/sap-hcm-human-capital-management-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4135"
+  },
+  {
+    "name": "SAP Hybris (New)",
+    "slug": "sap-hybris-new",
+    "url": "https://www.shl.com/products/product-catalog/view/sap-hybris-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4082"
+  },
+  {
+    "name": "SAP Materials Management (New)",
+    "slug": "sap-materials-management-new",
+    "url": "https://www.shl.com/products/product-catalog/view/sap-materials-management-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4137"
+  },
+  {
+    "name": "SAP SD (Sales and Distribution) (New)",
+    "slug": "sap-sd-sales-and-distribution-new",
+    "url": "https://www.shl.com/products/product-catalog/view/sap-sd-sales-and-distribution-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4064"
+  },
+  {
+    "name": "Search Engine Optimization (New)",
+    "slug": "search-engine-optimization-new",
+    "url": "https://www.shl.com/products/product-catalog/view/search-engine-optimization-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4171"
+  },
+  {
+    "name": "Selenium (New)",
+    "slug": "selenium-new",
+    "url": "https://www.shl.com/products/product-catalog/view/selenium-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4138"
+  },
+  {
+    "name": "Shell Scripting (New)",
+    "slug": "shell-scripting-new",
+    "url": "https://www.shl.com/products/product-catalog/view/shell-scripting-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4140"
+  },
+  {
+    "name": "SHL Verify Interactive - Inductive Reasoning",
+    "slug": "shl-verify-interactive-inductive-reasoning",
+    "url": "https://www.shl.com/products/product-catalog/view/shl-verify-interactive-inductive-reasoning/",
+    "remote_testing": true,
+    "adaptive_irt": true,
+    "test_type_keys": [
+      "A",
+      "S"
+    ],
+    "test_types": [
+      "Ability & Aptitude",
+      "Simulations"
+    ],
+    "entity_id": "3968"
+  },
+  {
+    "name": "SHL Verify Interactive – Deductive Reasoning",
+    "slug": "shl-verify-interactive-deductive-reasoning",
+    "url": "https://www.shl.com/products/product-catalog/view/shl-verify-interactive-deductive-reasoning/",
+    "remote_testing": true,
+    "adaptive_irt": true,
+    "test_type_keys": [
+      "A",
+      "S"
+    ],
+    "test_types": [
+      "Ability & Aptitude",
+      "Simulations"
+    ],
+    "entity_id": "3947"
+  },
+  {
+    "name": "SHL Verify Interactive – Numerical Reasoning",
+    "slug": "shl-verify-interactive-numerical-reasoning",
+    "url": "https://www.shl.com/products/product-catalog/view/shl-verify-interactive-numerical-reasoning/",
+    "remote_testing": true,
+    "adaptive_irt": true,
+    "test_type_keys": [
+      "A",
+      "S"
+    ],
+    "test_types": [
+      "Ability & Aptitude",
+      "Simulations"
+    ],
+    "entity_id": "3946"
+  },
+  {
+    "name": "SHL Verify Interactive G+",
+    "slug": "shl-verify-interactive-g",
+    "url": "https://www.shl.com/products/product-catalog/view/shl-verify-interactive-g/",
+    "remote_testing": true,
+    "adaptive_irt": true,
+    "test_type_keys": [
+      "A"
+    ],
+    "test_types": [
+      "Ability & Aptitude"
+    ],
+    "entity_id": "3971"
+  },
+  {
+    "name": "SHL Verify Interactive Numerical Calculation",
+    "slug": "shl-verify-interactive-numerical-calculation",
+    "url": "https://www.shl.com/products/product-catalog/view/shl-verify-interactive-numerical-calculation/",
+    "remote_testing": true,
+    "adaptive_irt": true,
+    "test_type_keys": [
+      "A"
+    ],
+    "test_types": [
+      "Ability & Aptitude"
+    ],
+    "entity_id": "3972"
+  },
+  {
+    "name": "Siebel Development (New)",
+    "slug": "siebel-development-new",
+    "url": "https://www.shl.com/products/product-catalog/view/siebel-development-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4141"
+  },
+  {
+    "name": "Smart Interview Live",
+    "slug": "smart-interview-live",
+    "url": "https://www.shl.com/products/product-catalog/view/smart-interview-live/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "P"
+    ],
+    "test_types": [
+      "Personality & Behavior"
+    ],
+    "entity_id": "4209"
+  },
+  {
+    "name": "Smart Interview Live Coding",
+    "slug": "smart-interview-live-coding",
+    "url": "https://www.shl.com/products/product-catalog/view/smart-interview-live-coding/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4218"
+  },
+  {
+    "name": "Smart Interview On Demand",
+    "slug": "smart-interview-on-demand",
+    "url": "https://www.shl.com/products/product-catalog/view/smart-interview-on-demand/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "P"
+    ],
+    "test_types": [
+      "Personality & Behavior"
+    ],
+    "entity_id": "4205"
+  },
+  {
+    "name": "Social Media (New)",
+    "slug": "social-media-new",
+    "url": "https://www.shl.com/products/product-catalog/view/social-media-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4014"
+  },
+  {
+    "name": "Software Business Analysis",
+    "slug": "software-business-analysis",
+    "url": "https://www.shl.com/products/product-catalog/view/software-business-analysis/",
+    "remote_testing": true,
+    "adaptive_irt": true,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "116"
+  },
+  {
+    "name": "SonarQube (New)",
+    "slug": "sonarqube-new",
+    "url": "https://www.shl.com/products/product-catalog/view/sonarqube-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4142"
+  },
+  {
+    "name": "Spelling (U.S.) (New)",
+    "slug": "spelling-u-s-new",
+    "url": "https://www.shl.com/products/product-catalog/view/spelling-u-s-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4051"
+  },
+  {
+    "name": "Split Screen Typing Test - Form 1",
+    "slug": "split-screen-typing-test-form-1",
+    "url": "https://www.shl.com/products/product-catalog/view/split-screen-typing-test-form-1/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "A",
+      "K"
+    ],
+    "test_types": [
+      "Ability & Aptitude",
+      "Knowledge & Skills"
+    ],
+    "entity_id": "40"
+  },
+  {
+    "name": "Spring (New)",
+    "slug": "spring-new",
+    "url": "https://www.shl.com/products/product-catalog/view/spring-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4143"
+  },
+  {
+    "name": "SQL (New)",
+    "slug": "sql-new",
+    "url": "https://www.shl.com/products/product-catalog/view/sql-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4144"
+  },
+  {
+    "name": "SQL Server (New)",
+    "slug": "sql-server-new",
+    "url": "https://www.shl.com/products/product-catalog/view/sql-server-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4035"
+  },
+  {
+    "name": "SQL Server Analysis Services (SSAS) (New)",
+    "slug": "sql-server-analysis-services-%28ssas%29-%28new%29",
+    "url": "https://www.shl.com/products/product-catalog/view/sql-server-analysis-services-%28ssas%29-%28new%29/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4282"
+  },
+  {
+    "name": "SQL Server Integration Services (SSIS) (New)",
+    "slug": "sql-server-integration-services-ssis-new",
+    "url": "https://www.shl.com/products/product-catalog/view/sql-server-integration-services-ssis-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4146"
+  },
+  {
+    "name": "SQL Server Reporting Services (SSRS) (New)",
+    "slug": "sql-server-reporting-services-ssrs-new",
+    "url": "https://www.shl.com/products/product-catalog/view/sql-server-reporting-services-ssrs-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4147"
+  },
+  {
+    "name": "Statistical Analysis System (New)",
+    "slug": "statistical-analysis-system-new",
+    "url": "https://www.shl.com/products/product-catalog/view/statistical-analysis-system-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "3996"
+  },
+  {
+    "name": "Struts (New)",
+    "slug": "struts-new",
+    "url": "https://www.shl.com/products/product-catalog/view/struts-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4151"
+  },
+  {
+    "name": "SVAR - Spoken English (AUS)",
+    "slug": "svar-spoken-english-aus",
+    "url": "https://www.shl.com/products/product-catalog/view/svar-spoken-english-aus/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "S"
+    ],
+    "test_types": [
+      "Simulations"
+    ],
+    "entity_id": "4216"
+  },
+  {
+    "name": "SVAR - Spoken English (Indian Accent)  (New)",
+    "slug": "svar-spoken-english-indian-accent-new",
+    "url": "https://www.shl.com/products/product-catalog/view/svar-spoken-english-indian-accent-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "S"
+    ],
+    "test_types": [
+      "Simulations"
+    ],
+    "entity_id": "3986"
+  },
+  {
+    "name": "SVAR - Spoken English (U.K.)",
+    "slug": "svar-spoken-english-u-k",
+    "url": "https://www.shl.com/products/product-catalog/view/svar-spoken-english-u-k/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "S"
+    ],
+    "test_types": [
+      "Simulations"
+    ],
+    "entity_id": "4217"
+  },
+  {
+    "name": "SVAR - Spoken English (US)  (New)",
+    "slug": "svar-spoken-english-us-new",
+    "url": "https://www.shl.com/products/product-catalog/view/svar-spoken-english-us-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "S"
+    ],
+    "test_types": [
+      "Simulations"
+    ],
+    "entity_id": "3987"
+  },
+  {
+    "name": "SVAR - Spoken French (Canadian) (New)",
+    "slug": "svar-spoken-french-canadian-new",
+    "url": "https://www.shl.com/products/product-catalog/view/svar-spoken-french-canadian-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "S"
+    ],
+    "test_types": [
+      "Simulations"
+    ],
+    "entity_id": "4197"
+  },
+  {
+    "name": "SVAR - Spoken French (European) (New)",
+    "slug": "svar-spoken-french-european-new",
+    "url": "https://www.shl.com/products/product-catalog/view/svar-spoken-french-european-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "S"
+    ],
+    "test_types": [
+      "Simulations"
+    ],
+    "entity_id": "4198"
+  },
+  {
+    "name": "SVAR - Spoken Spanish (Castilian) (New)",
+    "slug": "svar-spoken-spanish-castilian-new",
+    "url": "https://www.shl.com/products/product-catalog/view/svar-spoken-spanish-castilian-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "S"
+    ],
+    "test_types": [
+      "Simulations"
+    ],
+    "entity_id": "4199"
+  },
+  {
+    "name": "SVAR - Spoken Spanish (North American) (New)",
+    "slug": "svar-spoken-spanish-north-american-new",
+    "url": "https://www.shl.com/products/product-catalog/view/svar-spoken-spanish-north-american-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "S"
+    ],
+    "test_types": [
+      "Simulations"
+    ],
+    "entity_id": "4200"
+  },
+  {
+    "name": "Swing (New)",
+    "slug": "swing-new",
+    "url": "https://www.shl.com/products/product-catalog/view/swing-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4049"
+  },
+  {
+    "name": "Tableau (New)",
+    "slug": "tableau-new",
+    "url": "https://www.shl.com/products/product-catalog/view/tableau-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4079"
+  },
+  {
+    "name": "Telecommunications Engineering (New)",
+    "slug": "telecommunications-engineering-new",
+    "url": "https://www.shl.com/products/product-catalog/view/telecommunications-engineering-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4020"
+  },
+  {
+    "name": "Teradata Development (New)",
+    "slug": "teradata-development-new",
+    "url": "https://www.shl.com/products/product-catalog/view/teradata-development-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4167"
+  },
+  {
+    "name": "Time Management (U.S.)",
+    "slug": "time-management-u-s",
+    "url": "https://www.shl.com/products/product-catalog/view/time-management-u-s/",
+    "remote_testing": true,
+    "adaptive_irt": true,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "251"
+  },
+  {
+    "name": "Training Development",
+    "slug": "training-development",
+    "url": "https://www.shl.com/products/product-catalog/view/training-development/",
+    "remote_testing": true,
+    "adaptive_irt": true,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "336"
+  },
+  {
+    "name": "Typing (New)",
+    "slug": "typing-new",
+    "url": "https://www.shl.com/products/product-catalog/view/typing-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "S"
+    ],
+    "test_types": [
+      "Simulations"
+    ],
+    "entity_id": "4201"
+  },
+  {
+    "name": "UiPath RPA Development (New)",
+    "slug": "uipath-rpa-development-new",
+    "url": "https://www.shl.com/products/product-catalog/view/uipath-rpa-development-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4175"
+  },
+  {
+    "name": "Universal Competency Framework Interview Guide",
+    "slug": "universal-competency-framework-interview-guide",
+    "url": "https://www.shl.com/products/product-catalog/view/universal-competency-framework-interview-guide/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "C",
+      "P"
+    ],
+    "test_types": [
+      "Competencies",
+      "Personality & Behavior"
+    ],
+    "entity_id": "735"
+  },
+  {
+    "name": "Universal Competency Framework Job profiling guide",
+    "slug": "universal-competency-framework-job-profiling-guide",
+    "url": "https://www.shl.com/products/product-catalog/view/universal-competency-framework-job-profiling-guide/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "C",
+      "P"
+    ],
+    "test_types": [
+      "Competencies",
+      "Personality & Behavior"
+    ],
+    "entity_id": "734"
+  },
+  {
+    "name": "Universal Competency Framework Profiler Cards (44)",
+    "slug": "universal-competency-framework-profiler-cards-44",
+    "url": "https://www.shl.com/products/product-catalog/view/universal-competency-framework-profiler-cards-44/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "C",
+      "P"
+    ],
+    "test_types": [
+      "Competencies",
+      "Personality & Behavior"
+    ],
+    "entity_id": "733"
+  },
+  {
+    "name": "UNIX (New)",
+    "slug": "unix-new",
+    "url": "https://www.shl.com/products/product-catalog/view/unix-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4172"
+  },
+  {
+    "name": "VB.NET (New)",
+    "slug": "vb-net-new",
+    "url": "https://www.shl.com/products/product-catalog/view/vb-net-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4173"
+  },
+  {
+    "name": "Verify - Deductive Reasoning",
+    "slug": "verify-deductive-reasoning",
+    "url": "https://www.shl.com/products/product-catalog/view/verify-deductive-reasoning/",
+    "remote_testing": true,
+    "adaptive_irt": true,
+    "test_type_keys": [
+      "A"
+    ],
+    "test_types": [
+      "Ability & Aptitude"
+    ],
+    "entity_id": "3733"
+  },
+  {
+    "name": "Verify - Following Instructions",
+    "slug": "verify-following-instructions",
+    "url": "https://www.shl.com/products/product-catalog/view/verify-following-instructions/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "A"
+    ],
+    "test_types": [
+      "Ability & Aptitude"
+    ],
+    "entity_id": "3941"
+  },
+  {
+    "name": "Verify - G+",
+    "slug": "verify-g",
+    "url": "https://www.shl.com/products/product-catalog/view/verify-g/",
+    "remote_testing": true,
+    "adaptive_irt": true,
+    "test_type_keys": [
+      "A"
+    ],
+    "test_types": [
+      "Ability & Aptitude"
+    ],
+    "entity_id": "3908"
+  },
+  {
+    "name": "Verify - General Ability Screen",
+    "slug": "verify-general-ability-screen",
+    "url": "https://www.shl.com/products/product-catalog/view/verify-general-ability-screen/",
+    "remote_testing": true,
+    "adaptive_irt": true,
+    "test_type_keys": [
+      "A"
+    ],
+    "test_types": [
+      "Ability & Aptitude"
+    ],
+    "entity_id": "3734"
+  },
+  {
+    "name": "Verify - Inductive Reasoning (2014)",
+    "slug": "verify-inductive-reasoning-2014",
+    "url": "https://www.shl.com/products/product-catalog/view/verify-inductive-reasoning-2014/",
+    "remote_testing": true,
+    "adaptive_irt": true,
+    "test_type_keys": [
+      "A"
+    ],
+    "test_types": [
+      "Ability & Aptitude"
+    ],
+    "entity_id": "3836"
+  },
+  {
+    "name": "Verify - Numerical Ability",
+    "slug": "verify-numerical-ability",
+    "url": "https://www.shl.com/products/product-catalog/view/verify-numerical-ability/",
+    "remote_testing": true,
+    "adaptive_irt": true,
+    "test_type_keys": [
+      "A"
+    ],
+    "test_types": [
+      "Ability & Aptitude"
+    ],
+    "entity_id": "3745"
+  },
+  {
+    "name": "Verify - Technical Checking - Next Generation",
+    "slug": "verify-technical-checking-next-generation",
+    "url": "https://www.shl.com/products/product-catalog/view/verify-technical-checking-next-generation/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "A"
+    ],
+    "test_types": [
+      "Ability & Aptitude"
+    ],
+    "entity_id": "3768"
+  },
+  {
+    "name": "Verify - Verbal Ability - Next Generation",
+    "slug": "verify-verbal-ability-next-generation",
+    "url": "https://www.shl.com/products/product-catalog/view/verify-verbal-ability-next-generation/",
+    "remote_testing": true,
+    "adaptive_irt": true,
+    "test_type_keys": [
+      "A"
+    ],
+    "test_types": [
+      "Ability & Aptitude"
+    ],
+    "entity_id": "3906"
+  },
+  {
+    "name": "Verify - Working with Information",
+    "slug": "verify-working-with-information",
+    "url": "https://www.shl.com/products/product-catalog/view/verify-working-with-information/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "A"
+    ],
+    "test_types": [
+      "Ability & Aptitude"
+    ],
+    "entity_id": "3940"
+  },
+  {
+    "name": "Verify G+ - Ability Test Report",
+    "slug": "verify-g-ability-test-report",
+    "url": "https://www.shl.com/products/product-catalog/view/verify-g-ability-test-report/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "A"
+    ],
+    "test_types": [
+      "Ability & Aptitude"
+    ],
+    "entity_id": "3945"
+  },
+  {
+    "name": "Verify G+ - Candidate Report",
+    "slug": "verify-g-candidate-report",
+    "url": "https://www.shl.com/products/product-catalog/view/verify-g-candidate-report/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "A"
+    ],
+    "test_types": [
+      "Ability & Aptitude"
+    ],
+    "entity_id": "3970"
+  },
+  {
+    "name": "Verify Interactive Ability Report",
+    "slug": "verify-interactive-ability-report",
+    "url": "https://www.shl.com/products/product-catalog/view/verify-interactive-ability-report/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "A"
+    ],
+    "test_types": [
+      "Ability & Aptitude"
+    ],
+    "entity_id": "3969"
+  },
+  {
+    "name": "Verify Interactive G+ Candidate Report",
+    "slug": "verify-interactive-g-candidate-report",
+    "url": "https://www.shl.com/products/product-catalog/view/verify-interactive-g-candidate-report/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "A"
+    ],
+    "test_types": [
+      "Ability & Aptitude"
+    ],
+    "entity_id": "3976"
+  },
+  {
+    "name": "Verify Interactive G+ Report",
+    "slug": "verify-interactive-g-report",
+    "url": "https://www.shl.com/products/product-catalog/view/verify-interactive-g-report/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "A"
+    ],
+    "test_types": [
+      "Ability & Aptitude"
+    ],
+    "entity_id": "3974"
+  },
+  {
+    "name": "Verify Interactive Process Monitoring",
+    "slug": "verify-interactive-process-monitoring",
+    "url": "https://www.shl.com/products/product-catalog/view/verify-interactive-process-monitoring/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "A"
+    ],
+    "test_types": [
+      "Ability & Aptitude"
+    ],
+    "entity_id": "4290"
+  },
+  {
+    "name": "Virtual Assessment and Development Centers",
+    "slug": "virtual-assessment-and-development-centers",
+    "url": "https://www.shl.com/products/product-catalog/view/virtual-assessment-and-development-centers/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "P"
+    ],
+    "test_types": [
+      "Personality & Behavior"
+    ],
+    "entity_id": "4215"
+  },
+  {
+    "name": "Visual Basic for Applications (New)",
+    "slug": "visual-basic-for-applications-new",
+    "url": "https://www.shl.com/products/product-catalog/view/visual-basic-for-applications-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4163"
+  },
+  {
+    "name": "Visual Comparison - UK",
+    "slug": "visual-comparison-uk",
+    "url": "https://www.shl.com/products/product-catalog/view/visual-comparison-uk/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "399"
+  },
+  {
+    "name": "Visual Comparison - US",
+    "slug": "visual-comparison-us",
+    "url": "https://www.shl.com/products/product-catalog/view/visual-comparison-us/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "400"
+  },
+  {
+    "name": "VLSI and Embedded Systems (New)",
+    "slug": "vlsi-and-embedded-systems-new",
+    "url": "https://www.shl.com/products/product-catalog/view/vlsi-and-embedded-systems-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4164"
+  },
+  {
+    "name": "What Is The Value - US",
+    "slug": "what-is-the-value-us",
+    "url": "https://www.shl.com/products/product-catalog/view/what-is-the-value-us/",
+    "remote_testing": true,
+    "adaptive_irt": true,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "3459"
+  },
+  {
+    "name": "Workplace Administration Skills (New)",
+    "slug": "workplace-administration-skills-new",
+    "url": "https://www.shl.com/products/product-catalog/view/workplace-administration-skills-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "3991"
+  },
+  {
+    "name": "Workplace Health and Safety (New)",
+    "slug": "workplace-health-and-safety-new",
+    "url": "https://www.shl.com/products/product-catalog/view/workplace-health-and-safety-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4068"
+  },
+  {
+    "name": "WriteX - Email Writing (Customer Service) (New)",
+    "slug": "writex-email-writing-customer-service-new",
+    "url": "https://www.shl.com/products/product-catalog/view/writex-email-writing-customer-service-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "S"
+    ],
+    "test_types": [
+      "Simulations"
+    ],
+    "entity_id": "4183"
+  },
+  {
+    "name": "WriteX - Email Writing (Managerial) (New)",
+    "slug": "writex-email-writing-managerial-new",
+    "url": "https://www.shl.com/products/product-catalog/view/writex-email-writing-managerial-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "S"
+    ],
+    "test_types": [
+      "Simulations"
+    ],
+    "entity_id": "4184"
+  },
+  {
+    "name": "WriteX - Email Writing (Sales) (New)",
+    "slug": "writex-email-writing-sales-new",
+    "url": "https://www.shl.com/products/product-catalog/view/writex-email-writing-sales-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "B",
+      "S"
+    ],
+    "test_types": [
+      "Biodata & Situational Judgement",
+      "Simulations"
+    ],
+    "entity_id": "4185"
+  },
+  {
+    "name": "Written English v1",
+    "slug": "written-english-v1",
+    "url": "https://www.shl.com/products/product-catalog/view/written-english-v1/",
+    "remote_testing": true,
+    "adaptive_irt": true,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "17"
+  },
+  {
+    "name": "Written Spanish",
+    "slug": "written-spanish",
+    "url": "https://www.shl.com/products/product-catalog/view/written-spanish/",
+    "remote_testing": true,
+    "adaptive_irt": true,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "18"
+  },
+  {
+    "name": "Zabbix (New)",
+    "slug": "zabbix-new",
+    "url": "https://www.shl.com/products/product-catalog/view/zabbix-new/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "K"
+    ],
+    "test_types": [
+      "Knowledge & Skills"
+    ],
+    "entity_id": "4166"
+  },
+  {
+    "name": "360 Digital Report",
+    "slug": "360-digital-report",
+    "url": "https://www.shl.com/products/product-catalog/view/360-digital-report/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "D"
+    ],
+    "test_types": [
+      "Development & 360"
+    ],
+    "entity_id": "4297"
+  },
+  {
+    "name": "360° Multi-Rater Feedback System (MFS)",
+    "slug": "360-multi-rater-feedback-system-mfs",
+    "url": "https://www.shl.com/products/product-catalog/view/360-multi-rater-feedback-system-mfs/",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "test_type_keys": [
+      "D",
+      "P"
+    ],
+    "test_types": [
+      "Development & 360",
+      "Personality & Behavior"
+    ],
+    "entity_id": "744"
+  }
+]
