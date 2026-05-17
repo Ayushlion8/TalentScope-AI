@@ -56,7 +56,7 @@ def test_real_catalog_recommendation_urls_exactly_match_catalog_entries():
         assert 1 <= len(resp.recommendations) <= 10
         first = resp.recommendations[0]
         if expected_signal == "Personality & Behavior":
-            assert expected_signal in first.test_type
+            assert "P" in first.test_type
         else:
             assert expected_signal.lower() in first.name.lower()
         for rec in resp.recommendations:

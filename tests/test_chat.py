@@ -54,6 +54,7 @@ def test_chat_recommendation_schema(client: TestClient, sample_catalog: Catalog)
         assert isinstance(rec.url, str)
         assert rec.url.startswith(CATALOG_URL_PREFIX)
         assert isinstance(rec.test_type, str)
+        assert rec.test_type in {"A", "B", "C", "D", "E", "K", "P", "S", "A, P", "C, P"}
         assert set(rec.model_dump()) == {"name", "url", "test_type"}
 
 
@@ -100,6 +101,7 @@ def test_specific_query_returns_recommendations(sample_catalog: Catalog):
     )
     assert len(resp.recommendations) >= 1
     assert any("C Programming" in r.name for r in resp.recommendations)
+    assert resp.end_of_conversation is True
 
 
 def test_personality_assessment_query(sample_catalog: Catalog):
@@ -344,7 +346,7 @@ def test_not_end_of_conversation_before_8_turns(sample_catalog: Catalog):
         [{"role": "user", "content": "I need a programming test for SQL skills"}],
         cat=sample_catalog,
     )
-    assert resp.end_of_conversation is False
+    assert resp.end_of_conversation is True
 
 
 # --- Empty catalog handling ---

@@ -261,7 +261,7 @@ def _item_to_recommendation(item: dict) -> Recommendation:
     return Recommendation(
         name=item.get("name", ""),
         url=item.get("url", ""),
-        test_type=", ".join(item.get("test_types", [])),
+        test_type=", ".join(item.get("test_type_keys", [])),
     )
 
 
@@ -428,7 +428,7 @@ def build_response(messages: list[dict], cat: Catalog | None = None) -> ChatResp
     return ChatResponse(
         reply=reply,
         recommendations=recommendations,
-        end_of_conversation=False,
+        end_of_conversation=True,
     )
 
 
