@@ -50,11 +50,8 @@ def test_chat_recommendation_schema(client: TestClient, sample_catalog: Catalog)
         assert isinstance(rec.name, str)
         assert isinstance(rec.url, str)
         assert rec.url.startswith(CATALOG_URL_PREFIX)
-        assert isinstance(rec.test_type, list)
-        assert isinstance(rec.remote_testing, bool)
-        assert isinstance(rec.adaptive_irt, bool)
-        assert isinstance(rec.job_levels, list)
-        assert isinstance(rec.languages, list)
+        assert isinstance(rec.test_type, str)
+        assert set(rec.model_dump()) == {"name", "url", "test_type"}
 
 
 # --- Vague query -> clarification, no recommendations ---

@@ -22,13 +22,7 @@ class Recommendation(BaseModel):
 
     name: str
     url: str
-    test_type: list[str] = Field(default_factory=list)
-    remote_testing: bool = False
-    adaptive_irt: bool = False
-    duration_minutes: int | None = None
-    description: str = ""
-    job_levels: list[str] = Field(default_factory=list)
-    languages: list[str] = Field(default_factory=list)
+    test_type: str = ""
 
 
 class ChatResponse(BaseModel):

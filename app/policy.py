@@ -242,13 +242,7 @@ def _item_to_recommendation(item: dict) -> Recommendation:
     return Recommendation(
         name=item.get("name", ""),
         url=item.get("url", ""),
-        test_type=item.get("test_types", []),
-        remote_testing=item.get("remote_testing", False),
-        adaptive_irt=item.get("adaptive_irt", False),
-        duration_minutes=item.get("duration_minutes"),
-        description=item.get("description", ""),
-        job_levels=item.get("job_levels", []),
-        languages=item.get("languages", []),
+        test_type=", ".join(item.get("test_types", [])),
     )
 
 
@@ -417,26 +411,13 @@ def _build_recommendation_reply(recommendations: list[Recommendation], constrain
     count = len(recommendations)
     if count == 1:
         r = recommendations[0]
-        parts = [f"Based on your requirements, I recommend: **{r.name}**"]
-        if r.test_type:
-            parts.append(f"(Type: {', '.join(r.test_type)})")
-        if r.duration_minutes:
-            parts.append(f"Duration: ~{r.duration_minutes} min")
-        if r.remote_testing:
-            parts.append("Available for remote testing")
-        if r.description:
-            parts.append(f"\n{r.description[:200]}")
-        return " ".join(parts) + f"\n\n[{r.name}]({r.url})"
+        type_str = f" ({r.test_type})" if r.test_type else ""
+        return f"Best match: [{r.name}]({r.url}){type_str}."
 
-    top = recommendations[0]
-    parts = [f"I found {count} relevant assessments. Here are the top matches:"]
+    parts = [f"Top {count} SHL catalog matches:"]
     for i, r in enumerate(recommendations[:5], 1):
-        type_str = f" ({', '.join(r.test_type)})" if r.test_type else ""
-        dur = f" - ~{r.duration_minutes}min" if r.duration_minutes else ""
-        parts.append(f"{i}. [{r.name}]({r.url}){type_str}{dur}")
-
-    if count > 5:
-        parts.append(f"...and {count - 5} more.")
+        type_str = f" ({r.test_type})" if r.test_type else ""
+        parts.append(f"{i}. [{r.name}]({r.url}){type_str}")
 
     return "\n".join(parts)
 
