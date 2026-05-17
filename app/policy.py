@@ -11,9 +11,12 @@ logger = logging.getLogger(__name__)
 MAX_TURNS = 8
 
 OFF_TOPIC_PATTERNS = [
+    r"\bhiring\s+advice\b",
     r"\bhire\b.*\badvice\b",
+    r"\bhow\s+should\s+i\s+hire\b",
     r"\blegal\b",
     r"\blawsuit\b",
+    r"\bemployment\s+laws?\b",
     r"\bemployment\s*law\b",
     r"\blabor\s*law\b",
     r"\bhow\s+to\s+(hire|fire|interview|recruit)\b",
@@ -28,6 +31,11 @@ OFF_TOPIC_PATTERNS = [
     r"\bcareer\s+advice\b",
     r"\btraining\s+program\b",
     r"\bhow\s+to\s+write\b",
+]
+
+ASSESSMENT_SCOPE_TERMS = [
+    "assessment", "assessments", "test", "tests", "shl", "screening",
+    "aptitude", "cognitive", "personality", "reasoning", "skills",
 ]
 
 INJECTION_PATTERNS = [
@@ -70,6 +78,28 @@ def _matches_any(text: str, patterns: list[str]) -> bool:
         if re.search(pat, text, re.IGNORECASE):
             return True
     return False
+
+
+def _has_assessment_scope(text: str) -> bool:
+    text_lower = text.lower()
+    return any(term in text_lower for term in ASSESSMENT_SCOPE_TERMS)
+
+
+def _sanitize_query_part(text: str) -> str:
+    """Remove conversational filler and operational phrases that should not rank products."""
+    text = text.lower()
+    replacements = [
+        r"\bremote\s+(testing|test|assessment|assessments)\b",
+        r"\bonline\s+(testing|test|assessment|assessments)\b",
+        r"\bavailable\s+for\s+remote\b",
+        r"\bi\s+(need|want|am looking for|would like)\b",
+        r"\bplease\b",
+        r"\bspecifically\b",
+        r"\brecommend(?:ed|ing|ations?)?\b",
+    ]
+    for pattern in replacements:
+        text = re.sub(pattern, " ", text, flags=re.IGNORECASE)
+    return re.sub(r"\s+", " ", text).strip()
 
 
 def _extract_comparison_names(text: str) -> tuple[str | None, str | None]:
@@ -129,8 +159,9 @@ def _extract_constraints(messages: list[dict]) -> dict:
             continue
         text = msg.get("content", "").lower()
 
-        # Accumulate query parts
-        constraints["query_parts"].append(text)
+        sanitized = _sanitize_query_part(text)
+        if sanitized:
+            constraints["query_parts"].append(sanitized)
 
         # Test types
         for tt in _infer_test_types(text):
@@ -229,29 +260,28 @@ def build_response(messages: list[dict], cat: Catalog | None = None) -> ChatResp
             end_of_conversation=False,
         )
 
-    # Check for off-topic queries
-    if _matches_any(latest, OFF_TOPIC_PATTERNS) and not _is_shl_assessment_query(latest):
+    # Check for off-topic/general-advice queries before broad assessment routing.
+    if _matches_any(latest, OFF_TOPIC_PATTERNS) and not _has_assessment_scope(latest):
         return ChatResponse(
             reply="I specialize in SHL assessment recommendations only. I can't provide general hiring advice, legal guidance, or career coaching. Would you like help finding an assessment instead?",
             recommendations=[],
             end_of_conversation=False,
         )
 
-    # Check if purely off-topic (no assessment-related keywords at all)
+    # Vague greetings are in scope as an opening turn; unrelated requests are refused.
+    if _matches_any(latest, VAGUE_INDICATORS):
+        return ChatResponse(
+            reply="To recommend the best assessments, I need a bit more detail. Could you tell me the role you're hiring for, or the skills/attributes you want to evaluate (e.g., cognitive ability, personality, technical skills)?",
+            recommendations=[],
+            end_of_conversation=False,
+        )
+
     if not _is_shl_assessment_query(latest) and not _matches_any(latest, COMPARISON_PATTERNS):
-        # Very generic non-assessment queries
-        generic_patterns = [
-            r"^\s*(what|who|how|when|where|why|tell me)\b.*(?!assess|test|skill|aptitude)",
-            r"^\s*(can you|do you)\b(?!.*assess|.*test|.*recommend)",
-        ]
-        if _matches_any(latest, [r"^\s*(what|who|how|when|where|why)\s+(?!.*(?:assess|test|skill|measure|aptitude|personality|cognitive|hire|hiring|recruit|candidate))"]) and not _matches_any(latest, COMPARISON_PATTERNS):
-            # Only refuse if it's clearly NOT about assessments
-            if not any(kw in latest.lower() for kw in ["assess", "test", "skill", "aptitude", "personality", "cognitive", "measure", "shl"]):
-                return ChatResponse(
-                    reply="I can only help with SHL assessment recommendations. Please ask about assessments for specific roles, skills, or test types.",
-                    recommendations=[],
-                    end_of_conversation=False,
-                )
+        return ChatResponse(
+            reply="I can only help with SHL assessment recommendations. Please ask about assessments for specific roles, skills, or test types.",
+            recommendations=[],
+            end_of_conversation=False,
+        )
 
     # Check for comparison request
     if _matches_any(latest, COMPARISON_PATTERNS):
@@ -287,14 +317,6 @@ def build_response(messages: list[dict], cat: Catalog | None = None) -> ChatResp
     # Extract constraints from full conversation
     constraints = _extract_constraints(messages)
     combined_query = " ".join(constraints["query_parts"])
-
-    # Check if the query is vague
-    if _matches_any(latest, VAGUE_INDICATORS) and not constraints["test_types"] and not constraints["job_levels"]:
-        return ChatResponse(
-            reply="To recommend the best assessments, I need a bit more detail. Could you tell me the role you're hiring for, or the skills/attributes you want to evaluate (e.g., cognitive ability, personality, technical skills)?",
-            recommendations=[],
-            end_of_conversation=False,
-        )
 
     # If we have some context but it's still very broad, ask one clarifying question
     if (not constraints["test_types"] and not constraints["job_levels"]

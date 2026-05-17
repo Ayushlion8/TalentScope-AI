@@ -79,6 +79,20 @@ ROLE_KEYWORDS: dict[str, list[str]] = {
     "leadership": ["leadership", "executive", "c-suite", "ceo", "cfo", "coo", "vp", "vice president", "senior leader"],
 }
 
+STOPWORDS = {
+    "a", "an", "and", "are", "as", "at", "be", "for", "from", "i", "in",
+    "is", "it", "me", "my", "need", "of", "on", "or", "please", "role",
+    "some", "the", "to", "with", "want", "we", "you",
+}
+
+
+def _tokens(text: str) -> set[str]:
+    return {
+        token
+        for token in re.split(r"[^a-z0-9+#.]+", text.lower())
+        if len(token) >= 2 and token not in STOPWORDS
+    }
+
 
 def _similarity(a: str, b: str) -> float:
     return SequenceMatcher(None, a.lower(), b.lower()).ratio()
@@ -112,10 +126,53 @@ class Catalog:
             self.items = []
             self._loaded = True
             return
-        with open(self.path, encoding="utf-8") as f:
-            self.items = json.load(f)
+        try:
+            with open(self.path, encoding="utf-8") as f:
+                raw_items = json.load(f)
+        except json.JSONDecodeError as exc:
+            logger.exception("Catalog file is not valid JSON: %s", self.path)
+            raise ValueError(f"Catalog file is not valid JSON: {self.path}") from exc
+
+        if not isinstance(raw_items, list):
+            raise ValueError(f"Catalog file must contain a JSON list: {self.path}")
+
+        self.items = [item for item in (self._normalize_item(raw) for raw in raw_items) if item]
         logger.info("Loaded %d catalog items from %s", len(self.items), self.path)
         self._loaded = True
+
+    @staticmethod
+    def _normalize_item(raw: object) -> dict | None:
+        """Normalize a catalog row and discard unusable records."""
+        if not isinstance(raw, dict):
+            return None
+
+        name = str(raw.get("name", "")).strip()
+        url = str(raw.get("url", "")).strip()
+        if not name or not url.startswith("https://www.shl.com/"):
+            logger.warning("Skipping invalid catalog row with name=%r url=%r", name, url)
+            return None
+
+        test_type_keys = [
+            str(key).upper()
+            for key in raw.get("test_type_keys", [])
+            if str(key).upper() in TEST_TYPE_MAP
+        ]
+        test_types = raw.get("test_types") or [TEST_TYPE_MAP[key] for key in test_type_keys]
+
+        return {
+            "name": name,
+            "slug": str(raw.get("slug", "")).strip(),
+            "url": url,
+            "remote_testing": bool(raw.get("remote_testing", False)),
+            "adaptive_irt": bool(raw.get("adaptive_irt", False)),
+            "test_type_keys": test_type_keys,
+            "test_types": [str(value).strip() for value in test_types if str(value).strip()],
+            "entity_id": str(raw.get("entity_id", "")).strip(),
+            "description": str(raw.get("description", "")).strip(),
+            "job_levels": [str(value).strip() for value in raw.get("job_levels", []) if str(value).strip()],
+            "languages": [str(value).strip() for value in raw.get("languages", []) if str(value).strip()],
+            "duration_minutes": raw.get("duration_minutes"),
+        }
 
     def ensure_loaded(self) -> None:
         if not self._loaded:
@@ -170,7 +227,7 @@ class Catalog:
         # Rarer words get higher weight so more specific matches rank higher
         q_word_weights: dict[str, float] = {}
         if query:
-            q_words = set(query.lower().split())
+            q_words = _tokens(query)
             for qw in q_words:
                 if len(qw) < 2:
                     q_word_weights[qw] = 1.0
@@ -203,7 +260,7 @@ class Catalog:
                     score += 50
 
                 # Word-level matching (each query word found in name), weighted
-                q_words = set(q.split())
+                q_words = _tokens(q)
                 name_words = set(re.split(r"[\s()\-_,.]+", name))
                 overlap = q_words & name_words
                 if overlap:
