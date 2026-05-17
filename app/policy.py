@@ -81,6 +81,8 @@ VAGUE_INDICATORS = [
     r"^\s*(what\s+(?:do\s+you\s+have|can\s+you\s+offer|assessments\s+are\s+available))\s*[!.?]?\s*$",
     r"^\s*(recommend\w*\s+(?:an?|some)?\s*(?:assessment|test)?)\s*[!.?]?\s*$",
     r"^\s*(show\s+me\s+(?:all|some)?\s*(?:assessments|tests)?)\s*[!.?]?\s*$",
+    r"^\s*(need|i\s+need)\s+hiring\s+tests?\s*[!.?]?\s*$",
+    r"^\s*(need|i\s+need)\s+(?:some\s+)?tests?\s*[!.?]?\s*$",
 ]
 
 
@@ -136,6 +138,9 @@ def _extract_comparison_names(text: str) -> tuple[str | None, str | None]:
     if m:
         return m.group(1).strip(), m.group(2).strip()
     m = re.search(r"better\s*:\s*(.+?)\s+or\s+(.+?)(?:\s*[?.]|\s*$)", text, re.IGNORECASE)
+    if m:
+        return m.group(1).strip(), m.group(2).strip()
+    m = re.search(r"which\s+is\s+better\s+(.+?)\s+or\s+(.+?)(?:\s*[?.]|\s*$)", text, re.IGNORECASE)
     if m:
         return m.group(1).strip(), m.group(2).strip()
     return None, None
@@ -282,14 +287,14 @@ def build_response(messages: list[dict], cat: Catalog | None = None) -> ChatResp
     # Check for prompt injection
     if _matches_any(latest, INJECTION_PATTERNS):
         return ChatResponse(
-            reply="I can only help with SHL assessment recommendations. I cannot follow instructions outside that scope.",
+            reply="I can only help with SHL assessment recommendations and cannot follow instructions outside that scope.",
             recommendations=[],
             end_of_conversation=False,
         )
 
     if _matches_any(latest, LEGAL_PATTERNS):
         return ChatResponse(
-            reply="I can only help with SHL assessment selection. I can't provide legal or compliance advice about hiring or assessment use.",
+            reply="I can help select SHL assessments, but I cannot provide legal or compliance advice.",
             recommendations=[],
             end_of_conversation=False,
         )
@@ -297,7 +302,7 @@ def build_response(messages: list[dict], cat: Catalog | None = None) -> ChatResp
     # Check for off-topic/general-advice queries before broad assessment routing.
     if _matches_any(latest, OFF_TOPIC_PATTERNS) and not _has_assessment_scope(latest):
         return ChatResponse(
-            reply="I specialize in SHL assessment recommendations only. I can't provide general hiring advice, legal guidance, or career coaching. Would you like help finding an assessment instead?",
+            reply="I only recommend SHL assessments. Share the role and skills to assess, and I can suggest catalog matches.",
             recommendations=[],
             end_of_conversation=False,
         )
@@ -305,7 +310,7 @@ def build_response(messages: list[dict], cat: Catalog | None = None) -> ChatResp
     # Vague greetings are in scope as an opening turn; unrelated requests are refused.
     if _matches_any(latest, VAGUE_INDICATORS):
         return ChatResponse(
-            reply="To recommend the best assessments, I need a bit more detail. Could you tell me the role you're hiring for, or the skills/attributes you want to evaluate (e.g., cognitive ability, personality, technical skills)?",
+            reply="What role and skills should the assessment measure? For example: Java developer, sales manager, cognitive ability, or personality.",
             recommendations=[],
             end_of_conversation=False,
         )
@@ -370,7 +375,7 @@ def build_response(messages: list[dict], cat: Catalog | None = None) -> ChatResp
         # Broad query with some assessment context
         if turn_number == 1 and not constraints["remote_testing"]:
             return ChatResponse(
-                reply="I'd love to help! Could you narrow it down a bit? For example, what role level (entry, professional, manager) or what type of assessment (cognitive, personality, skills, simulation)?",
+                reply="What role and skills should the assessment measure? For example: role level, technical skill, cognitive ability, or personality.",
                 recommendations=[],
                 end_of_conversation=False,
             )

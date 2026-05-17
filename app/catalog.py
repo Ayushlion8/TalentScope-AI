@@ -87,6 +87,18 @@ EXPLICIT_SKILL_TOKENS = {
     "pl/sql", "python", "react", "sap", "scrum", "sql", "testing",
 }
 
+GENERIC_NAME_TERMS = {
+    "global", "general", "report", "assessment", "development", "solution",
+    "profile", "survey", "questionnaire",
+}
+
+ASSESSMENT_ALIASES = {
+    "gsa": "Global Skills Assessment",
+    "opq": "Occupational Personality Questionnaire OPQ32r",
+    "opq32": "Occupational Personality Questionnaire OPQ32r",
+    "opq32r": "Occupational Personality Questionnaire OPQ32r",
+}
+
 STOPWORDS = {
     "a", "an", "and", "are", "as", "at", "be", "for", "from", "i", "in",
     "is", "it", "me", "my", "need", "of", "on", "or", "please", "role",
@@ -109,6 +121,10 @@ def _token_counts(text: str) -> Counter[str]:
         for token in re.split(r"[^a-z0-9+#.]+", text.lower())
         if len(token) >= 2 and token not in STOPWORDS
     )
+
+
+def _resolve_alias(name: str) -> str:
+    return ASSESSMENT_ALIASES.get(name.lower().strip(), name)
 
 
 def _similarity(a: str, b: str) -> float:
@@ -206,6 +222,7 @@ class Catalog:
 
     def get_by_name(self, name: str) -> dict | None:
         self.ensure_loaded()
+        name = _resolve_alias(name)
         name_lower = name.lower().strip()
         for item in self.items:
             if item["name"].lower().strip() == name_lower:
@@ -267,7 +284,7 @@ class Catalog:
 
                 # Exact full query in name
                 if q in name:
-                    score += 50
+                    score += 200
 
                 # Word-level matching (each query word found in name), weighted
                 q_token_counts = _token_counts(q)
@@ -276,7 +293,9 @@ class Catalog:
                 overlap = q_words & name_words
                 if overlap:
                     for w in overlap:
-                        score += (15 + 100 * q_word_weights.get(w, 1.0)) * min(q_token_counts[w], 3)
+                        score += (35 + 140 * q_word_weights.get(w, 1.0)) * min(q_token_counts[w], 3)
+                        if w in EXPLICIT_SKILL_TOKENS:
+                            score += 180
 
                 explicit_skills = q_words & EXPLICIT_SKILL_TOKENS
                 matched_explicit_skill = False
@@ -327,7 +346,13 @@ class Catalog:
                         # Check if item matches the role
                         combined = (name + " " + desc).lower()
                         if any(kw in combined for kw in role_kws):
-                            score += 12
+                            score += 28
+
+                generic_hits = sum(1 for term in GENERIC_NAME_TERMS if term in name_words)
+                if generic_hits and not explicit_skills:
+                    score -= generic_hits * 12
+                elif generic_hits and explicit_skills and not matched_explicit_skill:
+                    score -= generic_hits * 35
 
                 # Fuzzy name similarity bonus
                 sim = _similarity(q, name)
